@@ -2,7 +2,7 @@
     <div class="single-casino-upper">
         <div class="head-bonus-wrap aic-container">
             <div class="single-casino-upper-left">
-                <div class="upper-left-logo"><?php the_post_thumbnail(); ?></div>
+                <div class="upper-left-logo"><a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow"><?php the_post_thumbnail(); ?></a></div>
                 <table id="review-main-table">
                     <tbody>
                         <tr class="rating">
@@ -17,15 +17,15 @@
                                 </i></td>
                         <tr>
                             <td>🎲 <?php _e('Total number of games', 'all-in-casino'); ?></td>
-                            <td><i>850+</i></td>
+                            <td><i><?php the_field('review_total_games'); ?></i></td>
                         </tr>
                         <tr>
                             <td>🎁 <?php _e('Welcome bonus', 'all-in-casino'); ?></td>
-                            <td class="table-cta"><a href="/to/casumo" target="_blank" rel="nofollow"><?php the_field('review_bonus_text_first_line') . the_field('review_bonus_text_second_line'); ?></a></td>
+                            <td class="table-cta"><a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow"><?php the_field('review_bonus_text_first_line') . the_field('review_bonus_text_second_line'); ?></a></td>
                         </tr>
                         <tr class="cta">
                             <td class="hide">🏆 <?php echo get_the_title(); ?></td>
-                            <td colspan="2"><a class="btn" href="/to/casumo" target="_blank" rel="nofollow">Play Here!</a></td>
+                            <td colspan="2"><a class="btn" href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow">Play Here!</a></td>
                         </tr>
                     </tbody>
                 </table>

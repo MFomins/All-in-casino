@@ -246,7 +246,7 @@ table {
     .single-casino-lower {
         flex-direction: column;
     }
-    #review-main-table .cta td:nth-child(2) {
+    #review-main-table .cta td:nth-child(2), .single-casino-h1 {
         display: none;
     }
     #review-main-table {
