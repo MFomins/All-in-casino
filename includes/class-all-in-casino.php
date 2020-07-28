@@ -156,6 +156,11 @@ class All_In_Casino
 		 */
 		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-all-in-casino-widgets.php';
 
+		/**
+		 * Functionality responsible for adding acf fields / settings page
+		 */
+		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/all-in-casino-acf-setup.php';
+
 		$this->loader = new All_In_Casino_Loader();
 	}
 

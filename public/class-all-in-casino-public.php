@@ -90,4 +90,5 @@ class All_In_Casino_Public
 	{
 		wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/all-in-casino-public.js', array('jquery'), $this->version, false);
 	}
+
 }
