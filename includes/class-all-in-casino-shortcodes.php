@@ -100,7 +100,7 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
         {
             $loop_args = array(
                 'post_type' => 'casino-review',
-                'posts_per_page' => 2,
+                'posts_per_page' => 5,
             );
 
             $loop = new WP_Query($loop_args);

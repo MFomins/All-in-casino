@@ -8,16 +8,16 @@
                         <tr class="rating">
 
                             <td><span>⭐</span><?php _e('Rating', 'all-in-casino'); ?> </td>
-                            <td><i>
-                                    <?php
-                                    $casino_rating = get_field('review_rating');
-                                    $max_value = 10;
-                                    echo number_format($casino_rating, 1);
-                                    ?> / <?php echo $max_value; ?>
-                                </i></td>
+                            <td>
+                                <?php
+                                $casino_rating = get_field('review_rating');
+                                $max_value = 10;
+                                echo number_format($casino_rating, 1);
+                                ?> / <?php echo $max_value; ?>
+                            </td>
                         <tr>
-                            <td>🎲 <?php _e('Total number of games', 'all-in-casino'); ?></td>
-                            <td><i><?php the_field('review_total_games'); ?></i></td>
+                            <td>⏳ <?php _e('Withdrawal time', 'all-in-casino'); ?></td>
+                            <td><?php the_field('review_withdrawal_time'); ?></td>
                         </tr>
                         <tr>
                             <td>🎁 <?php _e('Welcome bonus', 'all-in-casino'); ?></td>
@@ -33,8 +33,10 @@
             <div class="single-casino-upper-right">
                 <div class="single-casino-h1"><?php echo the_title(); ?></div>
                 <div class="upper-right-bonus-info">
-                    <span><?php the_field('review_bonus_text_first_line'); ?></span>
-                    <span><?php the_field('review_bonus_text_second_line'); ?></span>
+                    <a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow">
+                        <span><?php the_field('review_bonus_text_first_line'); ?></span>
+                        <span><?php the_field('review_bonus_text_second_line'); ?></span>
+                    </a>
                 </div>
 
                 <div class="upper-right-terms">
@@ -76,6 +78,7 @@
                 </div>
             </div>
         </div>
+        <?php include ALL_IN_CASINO_BASE_DIR . 'templates/casino-reviews/parts/single-review-nav.php'; ?>
     </div>
     <div class="single-casino-lower aic-container">
         <main class="single-casino-main">
@@ -84,3 +87,6 @@
         <?php include ALL_IN_CASINO_BASE_DIR . 'templates/casino-reviews/parts/single-review-aside.php'; ?>
     </div>
 </div>
+
+
+

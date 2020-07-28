@@ -9,7 +9,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding:50px 0;
+    padding:30px 0;
 }
 
 .single-casino-h1 {
@@ -36,6 +36,7 @@
 
 .upper-right-bonus-info {
     color: #fff;
+    line-height: 40px;
 }
 
 .upper-right-pluses {
@@ -82,8 +83,9 @@
 }
 
 .upper-left-logo img{
-    max-height: 250px;
-    max-width: 250px;
+    width:200px;
+    height: 100px;
+    object-fit: contain;
 }
 
 .star-active {
@@ -101,18 +103,20 @@
     color: #fff;
 }
 
-.upper-right-bonus-info span:first-child {
+.upper-right-bonus-info a span:first-child {
     font-size: 40px;
     font-weight: bold;
+    color:#fff;
 }
 
-.upper-right-bonus-info span:nth-child(2) {
+.upper-right-bonus-info a span:nth-child(2) {
     font-size: 30px;
+    color:#fff;
 }
 
 .upper-right-get-bonus {
     display: flex;
-    padding: 10px 0;
+    padding-bottom: 15px;
 }
 
 .upper-right-get-bonus a {
@@ -196,19 +200,21 @@ table {
 .bonus-table {
     display: table;
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-.bonus-table tr:nth-child(odd) {
-    background: #f4f4f4;
+.bonus-table tr td:last-child {
+    font-weight: bold;
+}
+
+.bonus-table tr:not(:last-child) {
+    border-bottom: 1px solid #eee;
 }
 
 #review-main-table {
     margin-top: 10px;
     font-size: 12px;
     color: #fff;
-    width: 80%;
-    margin: 0 auto;
 }
 
 #review-main-table td {
@@ -239,6 +245,8 @@ table {
     justify-content: center;
     border-radius: 5px;
     border-bottom: 2px solid darkgrey;
+    width:50%;
+    margin: 0 auto;
 }
 
 .table-cta a {
