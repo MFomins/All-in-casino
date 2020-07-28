@@ -17,7 +17,7 @@
                                 </i></td>
                         <tr>
                             <td>🎲 <?php _e('Total number of games', 'all-in-casino'); ?></td>
-                            <td><i>850+</i></td>
+                            <td><i>80+</i></td>
                         </tr>
                         <tr>
                             <td>🎁 <?php _e('Welcome bonus', 'all-in-casino'); ?></td>
