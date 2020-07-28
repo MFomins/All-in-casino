@@ -72,14 +72,13 @@
 }
 
 .single-casino-upper-left {
-    flex: 0 0 40%;
+    flex: 0 0 45%;
     display: flex;
     flex-direction: column;
 }
 
 .upper-left-logo {
     display: flex;
-    justify-content: center;
 }
 
 .upper-left-logo img{
@@ -226,11 +225,7 @@ table {
 }
 
 #review-main-table tr td:nth-child(2) {
-    text-align: right;
-}
-
-#review-main-table .cta td {
-    text-align: center!important;
+    /* text-align: right; */
 }
 
 #review-main-table .cta a {
@@ -246,12 +241,17 @@ table {
     border-radius: 5px;
     border-bottom: 2px solid darkgrey;
     width:50%;
-    margin: 0 auto;
 }
 
 .table-cta a {
     color: #fff;
     font-weight: bold;
+}
+
+@media (min-width:768px) {
+    .mobile-casino-header {
+        display: none;
+    }
 }
 
 @media (max-width:767px) {
@@ -269,10 +269,46 @@ table {
     .single-casino-lower {
         flex-direction: column;
     }
-    #review-main-table .cta td:nth-child(2), .single-casino-h1 {
-        display: none;
+
+    .upper-left-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .upper-left-logo {
+        color:#fff;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #review-main-table tr td:nth-child(1) {
+        width:35%;
+    }
+
     #review-main-table {
         width: 100%;
+    }
+
+
+    #review-main-table .cta a {
+        margin:0 auto;
+        width:100%;
+    }
+
+    .single-casino-h1 {
+        display: none;
+    }
+
+    .upper-right-bonus-info a span:first-child {
+        font-size: 28px;
+    }
+
+    .upper-right-bonus-info a span:nth-child(2) {
+        font-size: 18px;
+    }
+    
+    .upper-right-pluses, .upper-right-minuses {
+        display: none;
     }
 }

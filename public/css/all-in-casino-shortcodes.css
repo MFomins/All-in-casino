@@ -313,8 +313,63 @@ i.icon-info {
     #main-tab {
         grid-template-columns: auto;
     }
+
+    .casino-reviews-item {
+        max-width: 280px;
+    }
+    
+    .casino-reviews-1 {
+        margin:0;
+        padding:10px 0;
+    }
+
+    .casino-reviews-1 img {
+        width:150px;
+        height: 75px;
+    }
+
+    .casino-reviews-1 i.icon-info {
+        font-size: 16px;
+    }
+
+    .casino-reviews-3 .field-item {
+        font-size: 14px;
+    }
+
+    .casino-reviews-1 a {
+font-size: 16px;
+    }
+
+    .casino-reviews-2 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .bonus-main-line {
+        font-size:24px;
+        line-height: 30px;
+    }
+
+    .bonus-second-line {
+        font-size: 16px;
+    }
+
     .casino-reviews-2, .casino-reviews-4 {
         padding: 10px 0;
+    }
+
+    .casino-reviews-4 .casino-review-button a {
+        font-size: 16px;
+        width:90%;
+        margin:0 auto;
+        text-align: center;
+    }
+
+    .casino-reviews-4 .casino-review-terms {
+        width:90%;
+        margin: 5px auto;
+        text-align: center;
+        font-size: 10px;
     }
 }
 

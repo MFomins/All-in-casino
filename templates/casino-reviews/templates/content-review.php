@@ -2,7 +2,11 @@
     <div class="single-casino-upper">
         <div class="head-bonus-wrap aic-container">
             <div class="single-casino-upper-left">
-                <div class="upper-left-logo"><a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow"><?php the_post_thumbnail(); ?></a></div>
+                <div class="upper-left-logo">
+                    <a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow"><?php the_post_thumbnail(); ?>
+                    </a>
+                    <div class="mobile-casino-header"><?php echo the_title(); ?></div>
+                </div>
                 <table id="review-main-table">
                     <tbody>
                         <tr class="rating">
@@ -87,6 +91,3 @@
         <?php include ALL_IN_CASINO_BASE_DIR . 'templates/casino-reviews/parts/single-review-aside.php'; ?>
     </div>
 </div>
-
-
-
