@@ -30,12 +30,14 @@
 </div>
 <div class="casino-reviews-4">
     <div class="terms-and-cta-wrap">
-        <div class="casino-review-button">
-            <a href="<?php the_field('review_redirect'); ?>"><?php echo __('Play', 'all-in-casino'); ?></a>
+        <div class="toplist-cta-wrap">
+            <a href="<?php the_field('review_redirect'); ?>" class="animated-button">
+                <?php echo __('Play', 'all-in-casino'); ?>
+            </a>
         </div>
         <div class="casino-review-terms">
             <?php if (get_field('review_terms')) : ?>
-                <i class="far fa-bookmark"></i></i><?php echo get_field('review_terms'); ?>
+                <?php echo get_field('review_terms'); ?>
             <?php endif; ?>
         </div>
     </div>
