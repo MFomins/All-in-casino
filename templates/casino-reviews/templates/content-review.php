@@ -31,10 +31,10 @@
                             <td class="hide">🏆 <?php echo get_the_title(); ?></td>
                             <td colspan="2" class="td-cta">
                                 <a class="animated-button" href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                     Play Here!
                                 </a>
                             </td>
@@ -50,41 +50,79 @@
                         <span><?php the_field('review_bonus_text_second_line'); ?></span>
                     </a>
                 </div>
+
+                <!-- Mobile pluses/minues-->
+                <div class="mobile-pluses-minuses">
+                    <div class="upper-right-pluses">
+                        <?php
+                        // Check rows exists.
+                        if (have_rows('review_casino_pluses')) :
+                            // Loop through rows.
+                            while (have_rows('review_casino_pluses')) : the_row();
+                                // Load sub field value.
+                                $sub_value = get_sub_field('review_item_field');
+                                // Do something...
+                                echo '<div class="field-item"><i class="icon-plus-circled"></i>' . $sub_value . '</div>';
+                            // End loop.
+                            endwhile;
+                        endif;
+                        ?>
+                    </div>
+                    <div class="upper-right-minuses">
+                        <?php
+                        // Check rows exists.
+                        if (have_rows('review_casino_minuses')) :
+                            // Loop through rows.
+                            while (have_rows('review_casino_minuses')) : the_row();
+                                // Load sub field value.
+                                $sub_value = get_sub_field('review_minus_item_field');
+                                // Do something...
+                                echo '<div class="field-item"><i class="icon-minus-circled"></i>' . $sub_value . '</div>';
+                            // End loop.
+                            endwhile;
+                        endif;
+                        ?>
+                    </div>
+                </div>
+                <!-- End mobile pluses/minuses -->
+
                 <div class="upper-right-get-bonus"><a href="#">GET BONUS <i class="icon-angle-double-right"></i></a></div>
                 <div class="upper-right-terms">
                     <?php
                     if (get_field('review_terms')) the_field('review_terms');
                     ?>
                 </div>
-                <div class="upper-right-pluses">
-                    <?php
-                    // Check rows exists.
-                    if (have_rows('review_casino_pluses')) :
-                        // Loop through rows.
-                        while (have_rows('review_casino_pluses')) : the_row();
-                            // Load sub field value.
-                            $sub_value = get_sub_field('review_item_field');
-                            // Do something...
-                            echo '<div class="field-item"><i class="icon-plus-circled"></i>' . $sub_value . '</div>';
-                        // End loop.
-                        endwhile;
-                    endif;
-                    ?>
-                </div>
-                <div class="upper-right-minuses">
-                    <?php
-                    // Check rows exists.
-                    if (have_rows('review_casino_minuses')) :
-                        // Loop through rows.
-                        while (have_rows('review_casino_minuses')) : the_row();
-                            // Load sub field value.
-                            $sub_value = get_sub_field('review_minus_item_field');
-                            // Do something...
-                            echo '<div class="field-item"><i class="icon-minus-circled"></i>' . $sub_value . '</div>';
-                        // End loop.
-                        endwhile;
-                    endif;
-                    ?>
+                <div class="pluses-minuses-wrap">
+                    <div class="upper-right-pluses">
+                        <?php
+                        // Check rows exists.
+                        if (have_rows('review_casino_pluses')) :
+                            // Loop through rows.
+                            while (have_rows('review_casino_pluses')) : the_row();
+                                // Load sub field value.
+                                $sub_value = get_sub_field('review_item_field');
+                                // Do something...
+                                echo '<div class="field-item"><i class="icon-plus-circled"></i>' . $sub_value . '</div>';
+                            // End loop.
+                            endwhile;
+                        endif;
+                        ?>
+                    </div>
+                    <div class="upper-right-minuses">
+                        <?php
+                        // Check rows exists.
+                        if (have_rows('review_casino_minuses')) :
+                            // Loop through rows.
+                            while (have_rows('review_casino_minuses')) : the_row();
+                                // Load sub field value.
+                                $sub_value = get_sub_field('review_minus_item_field');
+                                // Do something...
+                                echo '<div class="field-item"><i class="icon-minus-circled"></i>' . $sub_value . '</div>';
+                            // End loop.
+                            endwhile;
+                        endif;
+                        ?>
+                    </div>
                 </div>
             </div>
         </div>

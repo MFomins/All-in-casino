@@ -29,16 +29,14 @@
     ?>
 </div>
 <div class="casino-reviews-4">
-    <div class="terms-and-cta-wrap">
-        <div class="toplist-cta-wrap">
-            <a href="<?php the_field('review_redirect'); ?>" class="animated-button">
-                <?php echo __('Play', 'all-in-casino'); ?>
-            </a>
-        </div>
-        <div class="casino-review-terms">
-            <?php if (get_field('review_terms')) : ?>
-                <?php echo get_field('review_terms'); ?>
-            <?php endif; ?>
-        </div>
+    <div class="cta-wrap">
+        <a href="<?php the_field('review_redirect'); ?>">
+            <?php echo __('Play', 'all-in-casino'); ?>
+        </a>
     </div>
+    <?php if (get_field('review_enable_tnc') == true) : ?>
+        <div class="casino-review-terms">
+                <?php echo get_field('review_terms'); ?>
+        </div>
+    <?php endif; ?>
 </div>

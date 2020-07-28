@@ -38,17 +38,17 @@
     line-height: 40px;
 }
 
+.pluses-minuses-wrap {
+    display: flex;
+}
+
 .upper-right-pluses {
-    float: left;
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
-.upper-right-minuses {
-    float: left;
-}
-
-.upper-right-minuses .field-item {
-    color: #fff;
+.field-item {
+    color:#fff;
+    font-size: 14px;
 }
 
 .upper-right-minuses .field-item i {
@@ -61,13 +61,6 @@
 
 .upper-right-pluses img {
     max-width: 22px;
-}
-
-.upper-right-pluses .field-item, .upper-right-minuses .field-item {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-size: 12px;
 }
 
 .single-casino-upper-left {
@@ -114,7 +107,6 @@
 }
 
 .upper-right-get-bonus {
-    display: flex;
     padding:15px 0;
 }
 
@@ -122,8 +114,11 @@
     color: #fff;
     font-weight: bold;
     background-color: #189e0c;
-    padding: 10px 120px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width:50%;
 }
 
 /* Main content field */
@@ -224,12 +219,6 @@ table {
     font-weight: bold;
 }
 
-#review-main-table tr td:nth-child(2) {
-    /* text-align: right; */
-}
-
-#review-main-table .cta a {}
-
 .table-cta a {
     color: #fff;
     font-weight: bold;
@@ -240,6 +229,11 @@ table {
     .mobile-casino-header {
         display: none;
     }
+
+    .mobile-pluses-minuses {
+        display: none;
+    }
+
 }
 
 @media (max-width:767px) {
@@ -247,13 +241,16 @@ table {
         flex-direction: column;
         padding: 10px;
     }
+
+    .pluses-minuses-wrap {
+        display: none;
+    }
+
     .upper-right-bonus-info {
         line-height: 32px;
         padding: 15px 0;
     }
-    .upper-right-get-bonus a {
-        display: flex;
-    }
+
     .single-casino-lower {
         flex-direction: column;
     }
@@ -277,6 +274,15 @@ table {
         margin: 0 auto;
         width: 100%;
     }
+
+    .single-casino-upper-left {
+        width:100%;
+    }
+
+    .next-review a {
+        background-color: #272d3a!important;
+    }
+
     .single-casino-h1 {
         display: none;
     }
@@ -285,9 +291,6 @@ table {
     }
     .upper-right-bonus-info a span:nth-child(2) {
         font-size: 18px;
-    }
-    .upper-right-pluses, .upper-right-minuses {
-        display: none;
     }
 }
 
