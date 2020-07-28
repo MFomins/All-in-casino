@@ -1,0 +1,56 @@
+.casino-slots-head-bg {
+    background-color: darkkhaki;
+}
+
+.single-slot-name h1 {
+    padding: 20px 0;
+    margin:0;
+    text-align: center;
+}
+
+.casino-slots-head {
+    padding: 0 0 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.casino-slots-head-left {
+    position: relative;
+}
+
+.iframe-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.casino-slots-content {
+    padding-top: 30px;
+}
+
+.slot-iframe-cta {
+    font-size: 14px;
+    padding: 5px 50px;
+    background-color: #accd41;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.load-iframe {
+    font-size: 14px;
+    padding: 5px 50px;
+    background-color: #1f188a;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.load-iframe:hover {
+    cursor: pointer;
+}

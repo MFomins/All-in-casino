@@ -1,0 +1,255 @@
+.single-casino-review {}
+
+.single-casino-upper {
+    background-color: #4a4a4a;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 8px, rgba(0, 0, 0, .05) 0, rgba(0, 0, 0, .05) 10px);
+}
+
+.head-bonus-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:50px 0;
+}
+
+.single-casino-h1 {
+    color:#fff;
+    font-size: 12px;
+}
+
+.single-casino-upper-right {
+    align-self: flex-start;
+    flex: 0 0 50%;
+}
+
+.upper-left-rating {
+    display: flex;
+    align-items: center;
+}
+
+.upper-left-rating span:first-of-type {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.upper-right-bonus-info {
+    color: #fff;
+}
+
+.upper-right-pluses {
+    float: left;
+    margin-right: 40px;
+}
+
+.upper-right-minuses {
+    float: left;
+}
+
+.upper-right-minuses .field-item {
+    color:#fff;
+}
+
+.upper-right-minuses .field-item i {
+    color:#e85f5f;
+}
+
+.upper-right-pluses .field-item i {
+    color:#1c9e0c;
+}
+
+.upper-right-pluses img {
+    max-width: 22px;
+}
+
+.upper-right-pluses .field-item, .upper-right-minuses .field-item {
+    display: flex;
+    align-items: center;
+    color:#fff;
+    font-size: 12px;
+}
+
+.single-casino-upper-left {
+    flex: 0 0 40%;
+}
+
+.star-active {
+    font-size: 24px;
+    color: gold;
+}
+
+.star-blank {
+    font-size: 24px;
+    color: #ccc;
+}
+
+.upper-right-terms {
+    font-size: 10px;
+    color: #fff;
+}
+
+.upper-right-bonus-info span:first-child {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.upper-right-bonus-info span:nth-child(2) {
+    font-size: 30px;
+}
+
+.upper-right-get-bonus {
+    display: flex;
+    padding: 10px 0;
+}
+
+.upper-right-get-bonus a {
+    color: #fff;
+    font-weight: bold;
+    background-color: #189e0c;
+    padding: 10px 120px;
+    border-radius: 5px;
+}
+
+/* Main content field */
+
+.single-casino-lower {
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-casino-main {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px #eaeaea solid;
+}
+
+.single-casino-main {
+    flex: 70%;
+}
+
+/* Tables */
+
+.hide {
+    display: none!important;
+}
+
+table {
+    border-collapse: collapse;
+    vertical-align: top;
+}
+
+.custom-table td, .toplist-table td {
+    border: 1px solid #dbdbdb;
+    vertical-align: middle;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+.custom-table td:first-of-type {
+    font-weight: bold;
+}
+
+.ext td {
+    border: none;
+    text-align: center;
+}
+
+/* Casino review aside */
+
+.single-casino-aside {
+    flex: 25%;
+    margin: 20px;
+}
+
+.aside-item {
+    background: #fff;
+    border: 1px #eaeaea solid;
+    padding: 10px;
+}
+
+.aside-header {
+    font-weight: bold;
+}
+
+.list-wrapper {
+    font-size: 14px;
+}
+
+.aside-item:not(:first-child) {
+    margin-top: 10px;
+}
+
+.bonus-table {
+    display: table;
+    width: 100%;
+    font-size: 16px;
+}
+
+.bonus-table tr:nth-child(odd) {
+    background: #f4f4f4;
+}
+
+#review-main-table {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+#review-main-table td {
+    padding: 5px;
+}
+
+#review-main-table tr td:nth-child(1) {
+    font-weight: bold;
+}
+
+#review-main-table tr td:nth-child(2) {
+    text-align: right;
+}
+
+#review-main-table .cta td {
+    text-align: center!important;
+}
+
+#review-main-table .cta a {
+    background-color: #189e0c;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: flex;
+    padding: 3px 0;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.table-cta a {
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (max-width:767px) {
+    .head-bonus-wrap {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .upper-right-bonus-info {
+        line-height: 32px;
+        padding: 15px 0;
+    }
+    .upper-right-get-bonus a {
+        display: flex;
+    }
+    .single-casino-lower {
+        flex-direction: column;
+    }
+    #review-main-table .cta td:nth-child(2) {
+        display: none;
+    }
+    #review-main-table {
+        width: 100%;
+    }
+}
