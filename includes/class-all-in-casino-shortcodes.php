@@ -96,12 +96,28 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
             return ob_get_clean();
         }
 
-        public function casino_reviews_list($atts, $content)
+        public function casino_reviews_list($atts)
         {
+            $atts = shortcode_atts(
+                array(
+                    'reviews' => '',
+                ),
+                $atts,
+                'casino_reviews_list'
+            );
+
+            $slugs = $atts['reviews'];
+            $slugs = explode(',', $slugs);
+
             $loop_args = array(
                 'post_type' => 'casino-review',
-                'posts_per_page' => 5,
+                'posts_per_page' => get_option('posts_per_page'),
+                'orderby' => 'post_name__in',
             );
+
+            if (!empty($atts['reviews'])) {
+                $loop_args['post_name__in'] = $slugs;
+            }
 
             $loop = new WP_Query($loop_args);
 
