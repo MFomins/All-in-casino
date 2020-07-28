@@ -300,9 +300,16 @@ i.icon-info {
     font-size: 14px;
     padding: 0 25px;
     border-radius: 100px;
-    background-color: #464646;
     border: 2px solid;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.prev-review a {
+    background-color: #272d3a;
+}
+
+.next-review a {
+    background-color: #434d62;
 }
 
 .review-navigation .next-review a span {

@@ -1,19 +1,18 @@
 .single-casino-review {}
 
 .single-casino-upper {
-    background-color: #4a4a4a;
-    background-image: repeating-linear-gradient(135deg, transparent, transparent 8px, rgba(0, 0, 0, .05) 0, rgba(0, 0, 0, .05) 10px);
+    background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(49, 57, 73, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(20, 24, 31, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #313949;
 }
 
 .head-bonus-wrap {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding:30px 0;
+    padding: 30px 0;
 }
 
 .single-casino-h1 {
-    color:#fff;
+    color: #fff;
     font-size: 12px;
 }
 
@@ -49,15 +48,15 @@
 }
 
 .upper-right-minuses .field-item {
-    color:#fff;
+    color: #fff;
 }
 
 .upper-right-minuses .field-item i {
-    color:#e85f5f;
+    color: #e85f5f;
 }
 
 .upper-right-pluses .field-item i {
-    color:#1c9e0c;
+    color: #1c9e0c;
 }
 
 .upper-right-pluses img {
@@ -67,7 +66,7 @@
 .upper-right-pluses .field-item, .upper-right-minuses .field-item {
     display: flex;
     align-items: center;
-    color:#fff;
+    color: #fff;
     font-size: 12px;
 }
 
@@ -81,8 +80,8 @@
     display: flex;
 }
 
-.upper-left-logo img{
-    width:200px;
+.upper-left-logo img {
+    width: 200px;
     height: 100px;
     object-fit: contain;
 }
@@ -105,12 +104,12 @@
 .upper-right-bonus-info a span:first-child {
     font-size: 40px;
     font-weight: bold;
-    color:#fff;
+    color: #fff;
 }
 
 .upper-right-bonus-info a span:nth-child(2) {
     font-size: 30px;
-    color:#fff;
+    color: #fff;
 }
 
 .upper-right-get-bonus {
@@ -240,7 +239,7 @@ table {
     justify-content: center;
     border-radius: 5px;
     border-bottom: 2px solid darkgrey;
-    width:50%;
+    width: 50%;
 }
 
 .table-cta a {
@@ -269,45 +268,35 @@ table {
     .single-casino-lower {
         flex-direction: column;
     }
-
     .upper-left-logo {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .upper-left-logo {
-        color:#fff;
+        color: #fff;
         font-size: 18px;
         font-weight: bold;
     }
-
     #review-main-table tr td:nth-child(1) {
-        width:35%;
+        width: 35%;
     }
-
     #review-main-table {
         width: 100%;
     }
-
-
     #review-main-table .cta a {
-        margin:0 auto;
-        width:100%;
+        margin: 0 auto;
+        width: 100%;
     }
-
     .single-casino-h1 {
         display: none;
     }
-
     .upper-right-bonus-info a span:first-child {
         font-size: 28px;
     }
-
     .upper-right-bonus-info a span:nth-child(2) {
         font-size: 18px;
     }
-    
     .upper-right-pluses, .upper-right-minuses {
         display: none;
     }
