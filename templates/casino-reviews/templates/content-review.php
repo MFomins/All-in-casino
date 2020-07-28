@@ -29,7 +29,15 @@
                         </tr>
                         <tr class="cta">
                             <td class="hide">🏆 <?php echo get_the_title(); ?></td>
-                            <td colspan="2"><a class="btn" href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow">Play Here!</a></td>
+                            <td colspan="2" class="td-cta">
+                                <a class="animated-button" href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                    Play Here!
+                                </a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -42,14 +50,12 @@
                         <span><?php the_field('review_bonus_text_second_line'); ?></span>
                     </a>
                 </div>
-
+                <div class="upper-right-get-bonus"><a href="#">GET BONUS <i class="icon-angle-double-right"></i></a></div>
                 <div class="upper-right-terms">
                     <?php
                     if (get_field('review_terms')) the_field('review_terms');
                     ?>
                 </div>
-
-                <div class="upper-right-get-bonus"><a href="#">GET BONUS <i class="icon-angle-double-right"></i></a></div>
                 <div class="upper-right-pluses">
                     <?php
                     // Check rows exists.
