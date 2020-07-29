@@ -1,0 +1,11 @@
+.fc-sticky-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgba(25, 15, 45, .85);
+    color: #fff;
+}

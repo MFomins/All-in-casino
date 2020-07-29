@@ -161,6 +161,11 @@ class All_In_Casino
 		 */
 		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/all-in-casino-acf-setup.php';
 
+		/**
+		 * Functionality responsible for adding featured casino at the bottom of the pages
+		 */
+		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/all-in-casino-featured-casino.php';
+
 		$this->loader = new All_In_Casino_Loader();
 	}
 

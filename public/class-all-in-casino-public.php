@@ -66,6 +66,8 @@ class All_In_Casino_Public
 
 		wp_enqueue_style($this->plugin_name . '-fontello', plugin_dir_url(__FILE__) . '../vendor/fontello/css/fontello-embedded.css', array(), $this->version, 'all');
 
+		wp_enqueue_style($this->plugin_name . '-featured-casino', plugin_dir_url(__FILE__) . 'css/all-in-casino-featured-casino.css', array(), $this->version, 'all');
+
 		wp_register_style($this->plugin_name . '-widgets', plugin_dir_url(__FILE__) . 'css/all-in-casino-widgets.css', array(), $this->version, 'alls');
 
 		if (is_singular('casino-slot')) {
