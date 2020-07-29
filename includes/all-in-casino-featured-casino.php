@@ -6,29 +6,34 @@ if (!defined('ABSPATH')) {
 
 function fc_add_content($content)
 {
+    $redirect = get_field('fc_redirect', 'options');
+    $main_text = get_field('fc_main_text', 'options');
+    $sub_text = get_field('fc_sub_text', 'options');
+    $image = get_field('fc_casino_image', 'options');
+
     $content_output = '<div class="fc-sticky-bottom">';
 
-    $content_output .= '<div class="fc-content-wrapper aic-container"><div class="fc-close-btn"><i class="fas fa-times"></i></div>';
+    $content_output .= '<div class="fc-content-wrapper aic-container"><div class="fc-close-btn">X</div>';
 
     $content_output .= '<div class="fc-content-left">';
 
     $content_output .= '<div class="fc-content-img-wrap">';
 
-    $content_output .= '<img class="fc-content-img">';
+    $content_output .= '<img class="fc-content-img" src="'.$image['url'].'" alt="'.$image['alt'].'">';
 
     $content_output .= '</div>';
 
-    $content_output .= ' <div class="fc-content-text-wrap">';
+    $content_output .= '<div class="fc-content-text-wrap">';
 
     $content_output .= '<div class="fc-content-heading">';
 
-    $content_output .= "Heading text";
+    $content_output .= "{$main_text}";
 
     $content_output .= '</div>';
 
     $content_output .= '<div class="fc-content-info">';
 
-    $content_output .= "Info text";
+    $content_output .= "{$sub_text}";
 
     $content_output .= '</div>';
 
@@ -36,7 +41,7 @@ function fc_add_content($content)
 
     $content_output .= '</div>';
 
-    $content_output .= '<div class="fc-content-cta"><a href="#">Reģistrēties</a></div>';
+    $content_output .= '<div class="fc-content-cta"><a href="#" class="fc-cta-btn"><span></span><span></span><span></span><span></span>Reģistrēties</a></div>';
 
     $content_output .= '</div></div>';
 

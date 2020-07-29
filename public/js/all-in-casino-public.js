@@ -29,4 +29,10 @@ jQuery(document).ready(function ($) {
 		iframe.attr("src", iframe.data("src"));
 		$(".iframe-wrap").hide();
 	});
+
+	//Close featured casino window
+	$(".fc-close-btn").click(function () {
+		var bottomBar = $(".fc-sticky-bottom");
+		bottomBar.fadeOut();
+	});
 });
