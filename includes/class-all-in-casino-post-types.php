@@ -140,9 +140,9 @@ class All_In_Casino_Post_Types
 
         $args = array(
             'labels' => $labels,
-            'public'             => true,
+            'public'             => false,//Have to finish. Will not be in menu
             'publicly_queryable' => true,
-            'show_ui'            => true,
+            'show_ui'            => false,//Have to finish. Will not be in menu
             'show_in_menu'       => true,
             'query_var'          => true,
             'rewrite'            => array('slug' => 'slot'),
