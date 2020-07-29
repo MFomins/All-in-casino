@@ -108,7 +108,7 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
 
             $slugs = $atts['reviews'];
             $slugs = explode(',', $slugs);
-
+            
             $loop_args = array(
                 'post_type' => 'casino-review',
                 'posts_per_page' => get_option('posts_per_page'),

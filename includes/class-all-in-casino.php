@@ -166,6 +166,13 @@ class All_In_Casino
 		 */
 		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/all-in-casino-featured-casino.php';
 
+		/**
+		 * Functionality responsible for removing cpt slug
+		 */
+		if(get_field('disable_reviews_slug','options')) {
+			require_once plugin_dir_path(dirname(__FILE__)) . 'includes/all-in-casino-remove-slug.php';
+		}
+
 		$this->loader = new All_In_Casino_Loader();
 	}
 

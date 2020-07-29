@@ -58,7 +58,6 @@ class All_In_Casino_Post_Types
         $this->register_cpt_casino_review();
 
         $this->register_cpt_casino_slot();
-
     }
 
     public function register_cpt_casino_review()
@@ -140,9 +139,9 @@ class All_In_Casino_Post_Types
 
         $args = array(
             'labels' => $labels,
-            'public'             => false,//Have to finish. Will not be in menu
+            'public'             => false, //Have to finish. Will not be in menu
             'publicly_queryable' => true,
-            'show_ui'            => false,//Have to finish. Will not be in menu
+            'show_ui'            => false, //Have to finish. Will not be in menu
             'show_in_menu'       => true,
             'query_var'          => true,
             'rewrite'            => array('slug' => 'slot'),

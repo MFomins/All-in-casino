@@ -110,7 +110,7 @@
 
 #main-tab {
     display: grid;
-    grid-template-columns: 15% 29% 29% 27%;
+    grid-template-columns: 17% 27% 29% 27%;
 }
 
 .tabs-box {
