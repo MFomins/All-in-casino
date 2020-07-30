@@ -187,8 +187,9 @@ table {
 }
 
 .list-wrapper {
-    font-size: 13px;
+    font-size: 14px;
     padding: 10px;
+    text-transform: capitalize;
 }
 
 .aside-item:not(:first-child) {
@@ -199,6 +200,10 @@ table {
     display: table;
     width: 100%;
     font-size: 12px;
+}
+
+.bonus-table tr td {
+    padding:5px 0;
 }
 
 .bonus-table tr td:first-child {

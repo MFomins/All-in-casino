@@ -1,6 +1,6 @@
 <aside class="single-casino-aside">
     <div class="aside-item aside-bonus-information">
-        <div class="aside-header"><?php _e('Information','all-in-casino'); ?></div>
+        <div class="aside-header"><?php _e('Information', 'all-in-casino'); ?></div>
         <div class="list-wrapper">
             <?php
             $result = '';
@@ -22,46 +22,62 @@
         </div>
     </div>
     <div class="aside-item aside-deposit-methods">
-        <div class="aside-header"><?php _e('Deposit Methods','all-in-casino'); ?></div>
+        <div class="aside-header"><?php _e('Deposit Methods', 'all-in-casino'); ?></div>
         <div class="list-wrapper">
             <ul>
                 <?php
-                // Check rows exists.
-                if (have_rows('review_single_deposit_methods')) :
-                    // Loop through rows.
-                    while (have_rows('review_single_deposit_methods')) : the_row();
-                        // Load sub field value.
-                        $deposit = get_sub_field('review_single_deposit_method');
-                        echo "<li><i class='icon-angle-right'></i>{$deposit}</li>";
-                    endwhile;
-                endif;
-                ?>
+                $deposit_methods = get_field('review_deposit_methods');
+                if ($deposit_methods) : ?>
+                    <ul>
+                        <?php foreach ($deposit_methods as $method) : ?>
+                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
             </ul>
         </div>
     </div>
     <div class="aside-item aside-withdraw-methods">
         <div class="aside-header">
-        <?php _e('Withdraw Methods','all-in-casino'); ?>
+            <?php _e('Withdraw Methods', 'all-in-casino'); ?>
         </div>
         <div class="list-wrapper">
             <ul>
                 <?php
-                // Check rows exists.
-                if (have_rows('review_single_withdraw_methods')) :
-                    // Loop through rows.
-                    while (have_rows('review_single_withdraw_methods')) : the_row();
-                        // Load sub field value.
-                        $withdraw = get_sub_field('review_single_withdraw_method');
-                        echo "<li><i class='icon-angle-right'></i>{$withdraw}</li>";
-                    endwhile;
-                endif;
-                ?>
+                $withdrawal_methods = get_field('review_withdraw_methods');
+                if ($withdrawal_methods) : ?>
+                    <ul>
+                        <?php foreach ($withdrawal_methods as $method) : ?>
+                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
             </ul>
         </div>
     </div>
+
+    <div class="aside-item aside-providers">
+        <div class="aside-header">
+            <?php _e('Providers', 'all-in-casino'); ?>
+        </div>
+        <div class="list-wrapper">
+            <ul>
+                <?php
+                $providers = get_field('review_providers');
+                if ($providers) : ?>
+                    <ul>
+                        <?php foreach ($providers as $provider) : ?>
+                            <li><i class="icon-angle-double-right"></i><?php echo $provider; ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
+            </ul>
+        </div>
+    </div>
+
     <div class="aside-item aside-customer-support">
         <div class="aside-header">
-        <?php _e('Customer Support','all-in-casino'); ?>
+            <?php _e('Customer Support', 'all-in-casino'); ?>
         </div>
         <div class="list-wrapper">
             <ul>
