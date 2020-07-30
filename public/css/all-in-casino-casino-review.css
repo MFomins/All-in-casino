@@ -188,6 +188,7 @@ table {
 
 .list-wrapper {
     font-size: 13px;
+    padding: 10px;
 }
 
 .aside-item:not(:first-child) {
