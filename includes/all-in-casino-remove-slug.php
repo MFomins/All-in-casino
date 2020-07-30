@@ -1,12 +1,12 @@
 <?php
 
-add_filter('register_post_type_args', 'spartacus_change_cpt_slug', 10, 2);
+add_filter('register_post_type_args', 'aic_change_cpt_slug', 10, 2);
 
-add_filter('post_type_link', 'spartacus_remove_slug', 10, 3);
+add_filter('post_type_link', 'aic_remove_slug', 10, 3);
 
-add_action('pre_get_posts', 'spartacus_parse_request');
+add_action('pre_get_posts', 'aic_parse_request');
 
-function spartacus_change_cpt_slug($args, $post_type)
+function aic_change_cpt_slug($args, $post_type)
 {
 
     // Make sure we're only modifying our desired post type.
@@ -19,7 +19,7 @@ function spartacus_change_cpt_slug($args, $post_type)
 }
 
 
-function spartacus_remove_slug($post_link, $post, $leavename)
+function aic_remove_slug($post_link, $post, $leavename)
 {
     if ('casino-review' != $post->post_type || 'publish' != $post->post_status) {
         return $post_link;
@@ -30,7 +30,7 @@ function spartacus_remove_slug($post_link, $post, $leavename)
     return $post_link;
 }
 
-function spartacus_parse_request($query)
+function aic_parse_request($query)
 {
     if (!$query->is_main_query() || 2 != count($query->query) || !isset($query->query['page'])) {
         return;
