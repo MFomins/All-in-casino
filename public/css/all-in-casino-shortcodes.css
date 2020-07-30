@@ -127,9 +127,7 @@
 
 .tabs-box-item-wrap>* {
     background: #fff;
-    border-top: solid 1px #e0dfdf;
-    border-right: solid 1px #e0dfdf;
-    border-bottom: solid 1px #e0dfdf;
+    border: solid 1px #e0dfdf;
     cursor: pointer;
     padding: 0 5px;
 }
@@ -242,7 +240,6 @@ i.icon-info {
     padding: 5px 0;
     display: flex;
     justify-content: center;
-    border-radius: 5px;
 }
 
 .casino-reviews-4 .animated-button {
@@ -332,9 +329,6 @@ i.icon-info {
     #main-tab {
         grid-template-columns: auto;
     }
-    .casino-reviews-item {
-        max-width: 280px;
-    }
     .casino-reviews-1 {
         margin: 0;
         padding: 10px 0;
@@ -346,8 +340,15 @@ i.icon-info {
     .casino-reviews-1 i.icon-info {
         font-size: 16px;
     }
+    .casino-reviews-3 {
+        padding: 25px 10px;
+    }
+    .tabs-box {
+        top: -1px;
+        right: -1px;
+    }
     .casino-reviews-3 .field-item {
-        font-size: 14px;
+        font-size: 17px;
     }
     .casino-reviews-1 a {
         font-size: 16px;
@@ -366,25 +367,21 @@ i.icon-info {
     .casino-reviews-2 {
         padding: 10px 0;
     }
-
     .upper-right-get-bonus a {
-        width:100%;
+        width: 100%;
     }
-
     .casino-reviews-4 .casino-review-terms {
         width: 90%;
         margin: 5px auto;
         text-align: center;
         font-size: 10px;
     }
-
     #main-tab .casino-reviews-4 {
-        padding:0;
+        padding: 0;
         margin-top: 10px;
     }
-
     #main-tab .cta-wrap a {
-        padding:15px 0;
+        padding: 15px 0;
         font-size: 20px;
         letter-spacing: 2px;
         font-weight: bold;
