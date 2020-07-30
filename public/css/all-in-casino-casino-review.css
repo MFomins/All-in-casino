@@ -47,7 +47,7 @@
 }
 
 .field-item {
-    color:#fff;
+    color: #fff;
     font-size: 14px;
 }
 
@@ -107,7 +107,7 @@
 }
 
 .upper-right-get-bonus {
-    padding:15px 0;
+    padding: 15px 0;
 }
 
 .upper-right-get-bonus a {
@@ -118,7 +118,7 @@
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    width:50%;
+    width: 50%;
 }
 
 /* Main content field */
@@ -170,21 +170,24 @@ table {
 
 .single-casino-aside {
     flex: 25%;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .aside-item {
     background: #fff;
     border: 1px #eaeaea solid;
-    padding: 10px;
 }
 
 .aside-header {
     font-weight: bold;
+    background-color: #424c60;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
 }
 
 .list-wrapper {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .aside-item:not(:first-child) {
@@ -194,11 +197,17 @@ table {
 .bonus-table {
     display: table;
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
 }
 
-.bonus-table tr td:last-child {
+.bonus-table tr td:first-child {
+    width: 50%;
     font-weight: bold;
+}
+
+.bonus-table tr td:nth-child(2) {
+    text-align: right;
+    line-height: 20px;
 }
 
 .bonus-table tr:not(:last-child) {
@@ -224,16 +233,13 @@ table {
     font-weight: bold;
 }
 
-
 @media (min-width:768px) {
     .mobile-casino-header {
         display: none;
     }
-
     .mobile-pluses-minuses {
         display: none;
     }
-
 }
 
 @media (max-width:767px) {
@@ -241,16 +247,13 @@ table {
         flex-direction: column;
         padding: 10px;
     }
-
     .pluses-minuses-wrap {
         display: none;
     }
-
     .upper-right-bonus-info {
         line-height: 32px;
         padding: 15px 0;
     }
-
     .single-casino-lower {
         flex-direction: column;
     }
@@ -274,15 +277,12 @@ table {
         margin: 0 auto;
         width: 100%;
     }
-
     .single-casino-upper-left {
-        width:100%;
+        width: 100%;
     }
-
     .next-review a {
         background-color: #272d3a!important;
     }
-
     .single-casino-h1 {
         display: none;
     }
@@ -293,4 +293,3 @@ table {
         font-size: 18px;
     }
 }
-
