@@ -1,9 +1,7 @@
 
-.icon-plus:before { content: '\e800'; } /* '' */
-.icon-minus:before { content: '\e801'; } /* '' */
-.icon-plus-circled:before { content: '\e802'; } /* '' */
-.icon-minus-circled:before { content: '\e803'; } /* '' */
+.icon-cancel:before { content: '\e801'; } /* '' */
+.icon-plus-squared:before { content: '\f0fe'; } /* '' */
 .icon-angle-double-right:before { content: '\f101'; } /* '' */
-.icon-angle-right:before { content: '\f105'; } /* '' */
-.icon-angle-down:before { content: '\f107'; } /* '' */
 .icon-info:before { content: '\f129'; } /* '' */
+.icon-minus-squared:before { content: '\f146'; } /* '' */
+.icon-right:before { content: '\f178'; } /* '' */

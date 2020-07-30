@@ -13,13 +13,13 @@ function fc_add_content($content)
 
     $content_output = '<div class="fc-sticky-bottom">';
 
-    $content_output .= '<div class="fc-content-wrapper aic-container"><div class="fc-close-btn">X</div>';
+    $content_output .= '<div class="fc-content-wrapper aic-container"><div class="fc-close-btn"><i class="icon-cancel"></i></div>';
 
     $content_output .= '<div class="fc-content-left">';
 
     $content_output .= '<div class="fc-content-img-wrap">';
 
-    $content_output .= '<img class="fc-content-img" src="'.$image['url'].'" alt="'.$image['alt'].'">';
+    $content_output .= '<img class="fc-content-img" src="' . $image['url'] . '" alt="' . $image['alt'] . '">';
 
     $content_output .= '</div>';
 
@@ -41,7 +41,7 @@ function fc_add_content($content)
 
     $content_output .= '</div>';
 
-    $content_output .= '<div class="fc-content-cta"><a href="#" class="fc-cta-btn"><span></span><span></span><span></span><span></span>Reģistrēties</a></div>';
+    $content_output .= '<div class="fc-content-cta"><a href="' . $redirect . '" class="animated-button"><span></span><span></span><span></span><span></span>' . __('Register', 'all-in-casino') . '</a></div>';
 
     $content_output .= '</div></div>';
 

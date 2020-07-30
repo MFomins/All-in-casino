@@ -151,6 +151,14 @@ i.icon-info {
     background: #a4a4a4;
 }
 
+.casino-reviews-1 i {
+    font-size: 11px;
+}
+
+.casino-reviews-1 .icon-right {
+    margin-top: 2px;
+}
+
 .casino-reviews-1 img {
     width: 100px;
     height: 50px;
@@ -162,8 +170,10 @@ i.icon-info {
 }
 
 .casino-reviews-1 a {
-    font-size: 11px;
+    font-size: 10px;
     color: #fff;
+    display: flex;
+    align-items: center;
 }
 
 .casino-reviews-2 {
