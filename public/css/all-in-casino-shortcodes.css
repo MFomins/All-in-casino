@@ -242,6 +242,7 @@ i.icon-info {
     padding: 5px 0;
     display: flex;
     justify-content: center;
+    border-radius: 5px;
 }
 
 .casino-reviews-4 .animated-button {

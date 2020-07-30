@@ -62,7 +62,7 @@
                                 // Load sub field value.
                                 $sub_value = get_sub_field('review_item_field');
                                 // Do something...
-                                echo '<div class="field-item"><i class="icon-plus"></i>' . $sub_value . '</div>';
+                                echo '<div class="field-item"><i class="icon-plus-squared"></i>' . $sub_value . '</div>';
                             // End loop.
                             endwhile;
                         endif;
@@ -77,7 +77,7 @@
                                 // Load sub field value.
                                 $sub_value = get_sub_field('review_minus_item_field');
                                 // Do something...
-                                echo '<div class="field-item"><i class="icon-minus"></i>' . $sub_value . '</div>';
+                                echo '<div class="field-item"><i class="icon-minus-squared"></i>' . $sub_value . '</div>';
                             // End loop.
                             endwhile;
                         endif;
