@@ -11,7 +11,7 @@
  * Plugin Name:       All In Casino
  * Plugin URI:        yoursite.lv
  * Description:       All In Casino plugin
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            KR
  * Author URI:        yoursite.lv
  * License:           GPL-2.0+
