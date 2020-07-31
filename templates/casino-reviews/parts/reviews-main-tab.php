@@ -4,7 +4,7 @@
     <?php if (has_post_thumbnail()) : ?>
         <?php the_post_thumbnail(); ?>
     <?php endif; ?>
-    <a href="<?php echo get_permalink(); ?>"><i class="icon-info"></i></i><?php the_title(); ?> <i class="icon-right"></i></a href="#">
+    <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?> <i class="icon-right"></i></a href="#">
 </div>
 <div class="casino-reviews-2">
     <div class="bonus-main-line"><?php echo get_field('review_bonus_text_first_line'); ?></div>
