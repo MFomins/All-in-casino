@@ -235,6 +235,7 @@ table {
 
 #review-main-table tr td:nth-child(1) {
     font-weight: bold;
+    width:35%;
 }
 
 .rating .casino-rating {
