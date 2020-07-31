@@ -90,7 +90,7 @@
 }
 
 .upper-right-terms {
-    font-size: 9px;
+    font-size: 10px;
     color: #fff;
     margin-bottom: 5px;
 }
@@ -113,12 +113,15 @@
 .upper-right-get-bonus a {
     color: #fff;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     background-color: #189e0c;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    width: 50%;
+    width: 66%;
+    border: 1px solid #fff;
 }
 
 /* Main content field */
@@ -203,7 +206,7 @@ table {
 }
 
 .bonus-table tr td {
-    padding:5px 0;
+    padding: 5px 0;
 }
 
 .bonus-table tr td:first-child {
@@ -222,7 +225,7 @@ table {
 
 #review-main-table {
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
 }
 
@@ -232,6 +235,13 @@ table {
 
 #review-main-table tr td:nth-child(1) {
     font-weight: bold;
+}
+
+.rating .casino-rating {
+    font-weight: bold;
+    color: gold;
+    font-style: italic;
+    font-size: 16px;
 }
 
 .table-cta a {
@@ -274,7 +284,11 @@ table {
         font-weight: bold;
     }
     #review-main-table tr td:nth-child(1) {
-        width: 35%;
+        width: 40%;
+    }
+
+    #review-main-table tr td:nth-child(2) {
+        text-align: right;
     }
     #review-main-table {
         width: 100%;

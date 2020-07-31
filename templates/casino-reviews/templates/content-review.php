@@ -16,7 +16,7 @@
                                 <?php
                                 $casino_rating = get_field('review_rating');
                                 $max_value = 10;
-                                echo number_format($casino_rating, 1);
+                                echo '<span class="casino-rating">' . number_format($casino_rating, 1) . '</span>';
                                 ?> / <?php echo $max_value; ?>
                             </td>
                         <tr>
@@ -35,7 +35,7 @@
                                     <span></span>
                                     <span></span>
                                     <span></span>
-                                    Play Here!
+                                    <?php _e('Play Here!', 'all-in-casino'); ?>
                                 </a>
                             </td>
                         </tr>
@@ -86,7 +86,7 @@
                 </div>
                 <!-- End mobile pluses/minuses -->
 
-                <div class="upper-right-get-bonus"><a href="#">GET BONUS <i class="icon-angle-double-right"></i></a></div>
+                <div class="upper-right-get-bonus"><a href="#"><?php _e('Get Bonus'); ?> <i class="icon-angle-double-right"></i></a></div>
                 <div class="upper-right-terms">
                     <?php
                     if (get_field('review_terms')) the_field('review_terms');
