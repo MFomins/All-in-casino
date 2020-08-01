@@ -1,6 +1,4 @@
-<div class="casino-reviews-1" <?php if (get_field('review_bg_color')) {
-                                    echo 'style="background-color:' . get_field('review_bg_color') . '"';
-                                } ?>>
+<div class="casino-reviews-1">
     <?php if (has_post_thumbnail()) : ?>
         <?php the_post_thumbnail(); ?>
     <?php endif; ?>
