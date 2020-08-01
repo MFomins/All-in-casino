@@ -99,6 +99,7 @@
     background: #fff;
     box-shadow: 0 0 2.1rem rgba(0, 0, 0, .1);
     border: solid 1px #e0dfdf;
+    max-width: 90rem;
     margin: 0 auto;
 }
 
@@ -204,11 +205,11 @@ i.icon-info {
 }
 
 .casino-reviews-3 {
-    font-size: 15px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .casino-reviews-3 img {
