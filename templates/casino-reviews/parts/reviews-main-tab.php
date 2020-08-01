@@ -1,4 +1,8 @@
-<div class="casino-reviews-1">
+<div class="casino-reviews-1" 
+
+<?php if (get_field('review_bg_color')) : ?>
+    <?php echo 'style="background-color:'.get_field('review_bg_color').'"'; ?>
+    <?php endif; ?>>
     <?php if (has_post_thumbnail()) : ?>
         <?php the_post_thumbnail(); ?>
     <?php endif; ?>
@@ -19,7 +23,7 @@
             // Load sub field value.
             $sub_value = get_sub_field('review_item_field');
             // Do something...
-            echo '<div class="field-item"><img src="' . ALL_IN_CASINO_PLUGIN_URL . 'public/img/icons/checked.svg' . '" alt="Checked">' . $sub_value . '</div>';
+            echo '<div class="field-item"><img width="20px" height="15px" src="' . ALL_IN_CASINO_PLUGIN_URL . 'public/img/icons/checked.svg' . '" alt="Checked">' . $sub_value . '</div>';
         // End loop.
         endwhile;
 
@@ -34,7 +38,7 @@
     </div>
     <?php if (get_field('review_enable_tnc') == true) : ?>
         <div class="casino-review-terms">
-                <?php echo get_field('review_terms'); ?>
+            <?php echo get_field('review_terms'); ?>
         </div>
     <?php endif; ?>
 </div>

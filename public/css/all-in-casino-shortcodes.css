@@ -110,7 +110,7 @@
 #main-tab {
     display: grid;
     grid-template-columns: 17% 27% 31% 25%;
-    grid-template-rows: 120px;
+    grid-template-rows: 110px;
 }
 
 .tabs-box {
@@ -153,21 +153,13 @@ i.icon-info {
     font-size: 11px;
 }
 
-.casino-reviews-1 .icon-right {
-    margin-top: 2px;
-}
-
 .casino-reviews-1 img {
     width: 110px;
     height: 55px;
     object-fit: contain;
 }
 
-.casino-reviews-1 {
-    margin-right: 4px;
-}
-
-.casino-reviews-1 a {
+#main-tab .casino-reviews-1 a {
     font-size: 12px;
     color: #fff;
     display: flex;
@@ -234,9 +226,10 @@ i.icon-info {
     text-align: center;
 }
 
-.cta-wrap a {
+.casino-reviews-4 .cta-wrap a {
     color: #fff;
     background-color: #accd41;
+    text-transform: uppercase;
     padding: 5px 0;
     display: flex;
     justify-content: center;
