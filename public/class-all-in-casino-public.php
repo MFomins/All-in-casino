@@ -68,7 +68,7 @@ class All_In_Casino_Public
 
 		wp_enqueue_style($this->plugin_name . '-featured-casino', plugin_dir_url(__FILE__) . 'css/all-in-casino-featured-casino.css', array(), $this->version, 'all');
 
-		wp_register_style($this->plugin_name . '-widgets', plugin_dir_url(__FILE__) . 'css/all-in-casino-widgets.css', array(), $this->version, 'alls');
+		wp_register_style($this->plugin_name . '-widgets', plugin_dir_url(__FILE__) . 'css/all-in-casino-widgets.css', array(), $this->version, 'all');
 
 		if (is_singular('casino-slot')) {
 			wp_enqueue_style($this->plugin_name . '-single-casino-slot', plugin_dir_url(__FILE__) . 'css/all-in-casino-casino-slot.css', array(), $this->version, 'all');

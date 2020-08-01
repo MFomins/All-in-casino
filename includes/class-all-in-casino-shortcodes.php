@@ -54,18 +54,18 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
         {
             add_action('wp_enqueue_scripts', array($this, 'register_style'));
 
-            add_action('get_footer', array($this, 'enqueue_scripts'));
+            // add_action('get_footer', array($this, 'enqueue_scripts'));
         }
 
         public function register_style()
         {
-            wp_register_style($this->plugin_name . '-shortcodes', ALL_IN_CASINO_PLUGIN_URL . 'public/css/all-in-casino-shortcodes.css');
+            wp_enqueue_style($this->plugin_name . '-shortcodes', ALL_IN_CASINO_PLUGIN_URL . 'public/css/all-in-casino-shortcodes.css', array(), $this->version, 'all');
         }
 
-        public function enqueue_scripts()
-        {
-            wp_enqueue_style($this->plugin_name . '-shortcodes');
-        }
+        // public function enqueue_scripts()
+        // {
+        //     wp_enqueue_style($this->plugin_name . '-shortcodes');
+        // }
 
         public function casino_slots_list($atts, $content)
         {
@@ -108,7 +108,7 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
 
             $slugs = $atts['reviews'];
             $slugs = explode(',', $slugs);
-            
+
             $loop_args = array(
                 'post_type' => 'casino-review',
                 'posts_per_page' => get_option('posts_per_page'),
