@@ -1,14 +1,14 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: All In Casino\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-01 22:15+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: 2020-08-01 22:16+0000\n"
+"Last-Translator: Kristaps Ritins\n"
+"Language-Team: Latviešu valoda\n"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=n % 10 == 1 && n % 100 != 11 ? 0 : n != 0 ? "
+"1 : 2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -271,12 +271,12 @@ msgstr ""
 
 #: templates/casino-reviews/parts/reviews-main-tab.php:36
 msgid "Play"
-msgstr ""
+msgstr "Reģistrēties"
 
 #: templates/casino-reviews/parts/reviews-payments-tab.php:6
 #: templates/casino-reviews/parts/single-review-aside.php:25
 msgid "Deposit Methods"
-msgstr ""
+msgstr "Iemaksas Metodes"
 
 #: templates/casino-reviews/parts/reviews-payments-tab.php:10
 msgid "Withdraw methods"
@@ -284,39 +284,39 @@ msgstr ""
 
 #: templates/casino-reviews/parts/single-review-aside.php:3
 msgid "Information"
-msgstr ""
+msgstr "Informācija"
 
 #: templates/casino-reviews/parts/single-review-aside.php:42
 msgid "Withdraw Methods"
-msgstr ""
+msgstr "Izmaksas Metodes"
 
 #: templates/casino-reviews/parts/single-review-aside.php:61
 msgid "Providers"
-msgstr ""
+msgstr "Programmatūra"
 
 #: templates/casino-reviews/parts/single-review-aside.php:80
 msgid "Customer Support"
-msgstr ""
+msgstr "Par Kazino"
 
 #: templates/casino-reviews/templates/content-review.php:14
 msgid "Rating"
-msgstr ""
+msgstr "Reitings"
 
 #: templates/casino-reviews/templates/content-review.php:23
 msgid "Withdrawal time"
-msgstr ""
+msgstr "Izmaksas laiks"
 
 #: templates/casino-reviews/templates/content-review.php:27
 msgid "Welcome bonus"
-msgstr ""
+msgstr "Reģistrācijas bonuss"
 
 #: templates/casino-reviews/templates/content-review.php:38
 msgid "Play Here!"
-msgstr ""
+msgstr "Spēlēt!"
 
 #: templates/casino-reviews/templates/content-review.php:89
 msgid "Get Bonus"
-msgstr ""
+msgstr "Iegūt bonusu"
 
 #: templates/casino-slots/templates/content-slot.php:9
 msgid "Play for real money"
