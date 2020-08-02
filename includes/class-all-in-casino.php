@@ -167,6 +167,11 @@ class All_In_Casino
 		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/all-in-casino-featured-casino.php';
 
 		/**
+		 * Functionality responsible for adding schema to casino reviews
+		 */
+		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/all-in-casino-schema.php';
+
+		/**
 		 * Functionality responsible for removing cpt slug
 		 */
 		if(get_field('disable_reviews_slug','options')) {
