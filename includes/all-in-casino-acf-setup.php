@@ -23,49 +23,6 @@ if (function_exists('acf_add_options_page')) {
 if (function_exists('acf_add_local_field_group')) :
 
     acf_add_local_field_group(array(
-        'key' => 'group_5f215b10d2c61',
-        'title' => 'AIC Settings',
-        'fields' => array(
-            array(
-                'key' => 'field_5f215b1a7f073',
-                'label' => 'Disable reviews slug',
-                'name' => 'disable_reviews_slug',
-                'type' => 'true_false',
-                'instructions' => 'Disables reviews slug. Remember to refresh/flush permalinks at <strong>Settings -> Permalinks -> Save Changes</strong>',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'message' => '',
-                'default_value' => 0,
-                'ui' => 1,
-                'ui_on_text' => 'Enable',
-                'ui_off_text' => 'Disable',
-            ),
-        ),
-        'location' => array(
-            array(
-                array(
-                    'param' => 'options_page',
-                    'operator' => '==',
-                    'value' => 'aic-general-settings',
-                ),
-            ),
-        ),
-        'menu_order' => 0,
-        'position' => 'normal',
-        'style' => 'default',
-        'label_placement' => 'top',
-        'instruction_placement' => 'label',
-        'hide_on_screen' => '',
-        'active' => true,
-        'description' => '',
-    ));
-
-    acf_add_local_field_group(array(
         'key' => 'group_5f17f686c26ad',
         'title' => 'Casino Review Widget',
         'fields' => array(
@@ -449,7 +406,7 @@ if (function_exists('acf_add_local_field_group')) :
                 'label' => 'Casino rating',
                 'name' => 'review_rating',
                 'type' => 'number',
-                'instructions' => 'Enter casino rating. Rating up to 10 stars',
+                'instructions' => 'Enter casino rating. Rating up to 5 stars',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
@@ -462,8 +419,8 @@ if (function_exists('acf_add_local_field_group')) :
                 'prepend' => '',
                 'append' => '',
                 'min' => '',
-                'max' => 10,
-                'step' => 1,
+                'max' => 5,
+                'step' => '0.1',
             ),
             array(
                 'key' => 'field_5f1fe79fc3cc3',

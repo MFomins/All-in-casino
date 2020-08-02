@@ -15,7 +15,7 @@
                             <td>
                                 <?php
                                 $casino_rating = get_field('review_rating');
-                                $max_value = 10;
+                                $max_value = 5;
                                 echo '<span class="casino-rating">' . number_format($casino_rating, 1) . '</span>';
                                 ?> / <?php echo $max_value; ?>
                             </td>
