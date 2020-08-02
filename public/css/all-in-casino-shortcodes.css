@@ -99,7 +99,7 @@
     background: #fff;
     box-shadow: 0 0 2.1rem rgba(0, 0, 0, .1);
     border: solid 1px #e0dfdf;
-    max-width: 90rem;
+    max-width: 95rem;
     margin: 0 auto;
 }
 
@@ -171,7 +171,7 @@ i.icon-info {
     flex-direction: column;
     justify-self: flex-start;
     justify-content: center;
-    margin-left: 5px;
+    padding:0 10px;
 }
 
 .bonus-main-line {
