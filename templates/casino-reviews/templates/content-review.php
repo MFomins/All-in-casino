@@ -86,7 +86,7 @@
                 </div>
                 <!-- End mobile pluses/minuses -->
 
-                <div class="upper-right-get-bonus"><a href="#"><?php _e('Get Bonus', 'all-in-casino'); ?> <i class="icon-angle-double-right"></i></a></div>
+                <div class="upper-right-get-bonus"><a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow"><?php _e('Get Bonus', 'all-in-casino'); ?> <i class="icon-angle-double-right"></i></a></div>
                 <div class="upper-right-terms">
                     <?php
                     if (get_field('review_terms')) the_field('review_terms');

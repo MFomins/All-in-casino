@@ -4,7 +4,7 @@
     <?php echo 'style="background-color:'.get_field('review_bg_color').'"'; ?>
     <?php endif; ?>>
     <?php if (has_post_thumbnail()) : ?>
-        <?php the_post_thumbnail(); ?>
+        <a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow"><?php the_post_thumbnail(); ?></a>
     <?php endif; ?>
     <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?> <i class="icon-right"></i></a href="#">
 </div>
@@ -32,7 +32,7 @@
 </div>
 <div class="casino-reviews-4">
     <div class="cta-wrap">
-        <a href="<?php the_field('review_redirect'); ?>">
+        <a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow">
             <?php echo __('Play', 'all-in-casino'); ?>
         </a>
     </div>
