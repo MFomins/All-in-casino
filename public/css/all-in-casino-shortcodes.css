@@ -318,6 +318,7 @@ i.icon-info {
     }
     .casino-reviews-2 {
         padding: 10px 0;
+        justify-self: center;
     }
     .upper-right-get-bonus a {
         width: 100%;
