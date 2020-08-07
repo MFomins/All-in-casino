@@ -136,10 +136,7 @@
     margin: 20px;
     background-color: #fff;
     border: 1px #eaeaea solid;
-}
-
-.single-casino-main {
-    flex: 70%;
+    flex:0 0 70%;
 }
 
 /* Tables */
@@ -172,7 +169,7 @@ table {
 /* Casino review aside */
 
 .single-casino-aside {
-    flex: 25%;
+    flex:0 0 26.5%;
     margin: 20px 0;
 }
 
