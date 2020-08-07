@@ -133,7 +133,7 @@
 
 .single-casino-main {
     padding: 15px;
-    margin: 15px 0;
+    margin: 20px;
     background-color: #fff;
     border: 1px #eaeaea solid;
 }
@@ -300,6 +300,17 @@ table {
 }
 
 @media (max-width:767px) {
+    .single-casino-main {
+        padding:0;
+        margin:0;
+        border:none;
+    }
+
+    .single-casino-lower {
+        background:#fff;
+        padding:15px;
+    }
+
     .head-bonus-wrap {
         flex-direction: column;
         padding: 10px;
