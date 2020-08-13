@@ -176,7 +176,7 @@ i.icon-info {
 .bonus-main-line {
     font-weight: bold;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 30px;
 }
 
 .bonus-main-line span {
@@ -199,7 +199,7 @@ i.icon-info {
     font-size: 14px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px 0;
 }
 
@@ -212,6 +212,7 @@ i.icon-info {
 .casino-reviews-3 .field-item {
     display: flex;
     align-items: center;
+    line-height: 16px;
 }
 
 .casino-reviews-4 {
@@ -300,8 +301,13 @@ i.icon-info {
         right: -1px;
     }
     .casino-reviews-3 .field-item {
-        font-size: 17px;
+        font-size: 16px;
     }
+
+    .casino-reviews-3 .field-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
     .casino-reviews-1 a {
         font-size: 16px;
     }

@@ -2,24 +2,6 @@
 
 add_filter('acf/settings/show_admin', '__return_false');
 
-
-if (function_exists('acf_add_options_page')) {
-
-    acf_add_options_page(array(
-        'page_title'     => 'AIC Settings',
-        'menu_title'    => 'AIC Settings',
-        'menu_slug'     => 'aic-general-settings',
-        'capability'    => 'edit_posts',
-        'redirect'        => false
-    ));
-
-    acf_add_options_sub_page(array(
-        'page_title'     => 'Featured Casino',
-        'menu_title'    => 'Featured Casino',
-        'parent_slug'    => 'aic-general-settings',
-    ));
-}
-
 if (function_exists('acf_add_local_field_group')) :
 
     acf_add_local_field_group(array(
@@ -434,7 +416,7 @@ if (function_exists('acf_add_local_field_group')) :
                         'placeholder' => '',
                         'prepend' => '',
                         'append' => '',
-                        'maxlength' => 35,
+                        'maxlength' => '',
                     ),
                 ),
             ),
