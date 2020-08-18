@@ -4,7 +4,7 @@
 
 .casino-slots-list {
     display: grid;
-    grid-template-columns: repeat(3, 32.58%);
+    grid-template-columns: repeat(4, 24.2%);
     gap: 1rem;
     margin: 2rem 0;
 }

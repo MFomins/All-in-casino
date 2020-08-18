@@ -63,7 +63,7 @@ class All_In_Casino_Post_Types
     public function register_cpt_casino_review()
     {
         $labels = array(
-            'name'                  => _x('Casino Reviews', 'Post type general name', 'all-in-casino'),
+            'name'                  => _x('Casino Reviews [casino_reviews_list]', 'Post type general name', 'all-in-casino'),
             'singular_name'         => _x('Casino Review', 'Post type singular name', 'all-in-casino'),
             'menu_name'             => _x('Casino Reviews', 'Admin Menu text', 'all-in-casino'),
             'name_admin_bar'        => _x('Casino Review', 'Add New on Toolbar', 'all-in-casino'),
@@ -111,7 +111,7 @@ class All_In_Casino_Post_Types
     public function register_cpt_casino_slot()
     {
         $labels = array(
-            'name'                  => _x('Casino Slots', 'Post type general name', 'all-in-casino'),
+            'name'                  => _x('Casino Slots [casino_slots_list]', 'Post type general name', 'all-in-casino'),
             'singular_name'         => _x('Casino Slot', 'Post type singular name', 'all-in-casino'),
             'menu_name'             => _x('Casino Slots', 'Admin Menu text', 'all-in-casino'),
             'name_admin_bar'        => _x('Casino Slot', 'Add New on Toolbar', 'all-in-casino'),
@@ -139,9 +139,9 @@ class All_In_Casino_Post_Types
 
         $args = array(
             'labels' => $labels,
-            'public'             => false, //Have to finish. Will not be in menu
+            'public'             => true, //Have to finish. Will not be in menu
             'publicly_queryable' => true,
-            'show_ui'            => false, //Have to finish. Will not be in menu
+            'show_ui'            => true, //Have to finish. Will not be in menu
             'show_in_menu'       => true,
             'query_var'          => true,
             'rewrite'            => array('slug' => 'slot'),
