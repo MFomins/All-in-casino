@@ -25,6 +25,6 @@
         </div>
     </div>
     <div class="casino-slots-button">
-            <a href="<?php echo get_permalink(); ?>"><?php echo __('Review','all-in-casino'); ?></a>
+            <a href="<?php echo get_permalink(); ?>" target="_blank"><?php echo __('Review','all-in-casino'); ?></a>
     </div>
 </div>

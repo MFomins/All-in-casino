@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: All In Casino\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-18 12:28+0000\n"
-"PO-Revision-Date: 2020-08-18 12:29+0000\n"
+"PO-Revision-Date: 2020-08-18 12:33+0000\n"
 "Last-Translator: Kristaps Ritins\n"
 "Language-Team: Latvian\n"
 "Language: lv\n"
@@ -100,7 +100,7 @@ msgstr ""
 #: templates/casino-slots/casino-slots-shortcode.php:23
 #: templates/casino-slots/templates/content-slot.php:27
 msgid "Jackpot"
-msgstr ""
+msgstr "Džekpots"
 
 #. Author of the plugin
 msgid "KR"
@@ -249,7 +249,7 @@ msgstr ""
 
 #: templates/casino-slots/casino-slots-shortcode.php:28
 msgid "Review"
-msgstr ""
+msgstr "Apskats"
 
 #: templates/casino-slots/casino-slots-shortcode.php:15
 #: templates/casino-slots/templates/content-slot.php:17

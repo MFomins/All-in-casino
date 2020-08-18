@@ -9,6 +9,6 @@
     </div>
 
     <div class="casino-slots-button">
-        <a href="#">Review</a>
+        <a href="#"><?php _e('Review', 'all-in-casino'); ?></a>
     </div>
 </div>
