@@ -249,7 +249,7 @@ msgstr ""
 
 #: templates/casino-slots/casino-slots-shortcode.php:28
 msgid "Review"
-msgstr "Apskats"
+msgstr "Spēlēt"
 
 #: templates/casino-slots/casino-slots-shortcode.php:15
 #: templates/casino-slots/templates/content-slot.php:17
