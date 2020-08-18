@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: All In Casino\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-18 12:28+0000\n"
-"PO-Revision-Date: 2020-08-18 12:33+0000\n"
+"PO-Revision-Date: 2020-08-18 12:36+0000\n"
 "Last-Translator: Kristaps Ritins\n"
 "Language-Team: Latvian\n"
 "Language: lv\n"
@@ -70,7 +70,7 @@ msgstr ""
 
 #: templates/casino-slots/templates/content-slot.php:22
 msgid "Bets"
-msgstr ""
+msgstr "Likmes"
 
 #: templates/casino-reviews/parts/single-review-aside.php:80
 msgid "Customer Support"
