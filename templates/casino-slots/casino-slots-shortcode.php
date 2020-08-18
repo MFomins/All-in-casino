@@ -5,7 +5,7 @@
         <?php endif; ?>
     </div>
     <div class="casino-slots-name">
-        <?php echo get_field('slot_name'); ?>
+        <?php echo get_the_title(); ?>
     </div>
     <div class="casino-slots-publisher">
         <?php echo get_field('slot_publisher'); ?>

@@ -67,11 +67,11 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
         //     wp_enqueue_style($this->plugin_name . '-shortcodes');
         // }
 
-        public function casino_slots_list($atts, $content)
+        public function casino_slots_list($atts)
         {
             $loop_args = array(
                 'post_type' => 'casino-slot',
-                'posts_per_page' => 4,
+                'posts_per_page' => get_option('posts_per_page'),
             );
 
             $loop = new WP_Query($loop_args);

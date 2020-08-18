@@ -1,7 +1,7 @@
 <div class="casino-slots-wrap">
     <div class="casino-slots-head-bg">
         <div class="single-slot-name aic-container">
-            <h1><?php the_field('slot_name'); ?></h1>
+            <h1><?php echo get_the_title(); ?></h1>
         </div>
         <div class="casino-slots-head aic-container">
             <div class="casino-slots-head-iframe">
@@ -14,17 +14,17 @@
             <div class="casino-slots-information">
                 <div class="single-info-item">
                     <img src="<?php echo ALL_IN_CASINO_PLUGIN_URL . 'public/img/coin.png'; ?>" alt="RTP">
-                    <span class="single-info-item-title">RTP</span>
+                    <span class="single-info-item-title"><?php _e('RTP','all-in-casino'); ?></span>
                     <span class="single-info-item-data"><?php echo get_field('slot_payout_percentage'); ?></span>
                 </div>
                 <div class="single-info-item">
                     <img src="<?php echo ALL_IN_CASINO_PLUGIN_URL . 'public/img/money.png'; ?>" alt="Bet range">
-                    <span class="single-info-item-title">Bets</span>
+                    <span class="single-info-item-title"><?php _e('Bets','all-in-casino'); ?></span>
                     <span class="single-info-item-data"><?php echo get_field('slot_bet_range'); ?></span>
                 </div>
                 <div class="single-info-item">
                     <img src="<?php echo ALL_IN_CASINO_PLUGIN_URL . 'public/img/jackpot.png'; ?>" alt="Slot jackpot">
-                    <span class="single-info-item-title">Jackpot</span>
+                    <span class="single-info-item-title"><?php _e('Jackpot','all-in-casino'); ?></span>
                     <span class="single-info-item-data"><?php echo get_field('slot_jackpot'); ?></span>
                 </div>
             </div>
