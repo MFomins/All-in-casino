@@ -1,0 +1,66 @@
+/* Casino reviews widget */
+
+.casino-review-widget-wrap {
+    margin-bottom: 10px;
+}
+
+.casino-review-widget-image {
+    display: flex;
+    align-items: center;
+}
+
+.casino-review-widget-image img {
+    width: 80px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.casino-review-widget-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.casino-review-widget-upper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 10% 60%;
+    background-color: darkslateblue;
+    padding: 10px 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .3);
+}
+
+.casino-review-widget-bonus {
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+}
+
+.casino-review-widget-bonus span {
+    color: #32cd32;
+    font-weight: bold;
+}
+
+.casino-review-widget-lower {
+    width: 50%;
+    margin: -15px auto 0;
+}
+
+.review-cta a {
+    background-color: #32cd32;
+    display: flex;
+    justify-content: center;
+    color: #fff!important;
+    border-radius: 5px;
+    border: 1px solid #f1f3f5;
+    text-transform: uppercase;
+}
+
+.casino-review-widget h3 {
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    padding:10px 20px;
+    margin:0 0 10px!important;
+}

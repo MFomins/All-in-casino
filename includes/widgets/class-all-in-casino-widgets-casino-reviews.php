@@ -24,22 +24,20 @@ class All_In_Casino_Widget_Casino_Reviews extends WP_Widget
     public function widget($args, $instance)
     {
         $widget_id = $args['widget_id'];
-
-        echo $args['before_widget'];
-
-        echo $args['before_title'];
-        //Widget Title
-        echo get_field('review_widget_header', 'widget_' . $widget_id);
-        echo $args['after_title'];
+        $reviews = get_field('review_widget_post_object', 'widget_' . $widget_id);
 
         $loop_args = array(
             'post_type' => 'casino-review',
-            'posts_per_page' => 1
+            'post__in' => $reviews,
         );
 
         $loop = new WP_Query($loop_args);
 
         echo '<div class="casino-review-widget">';
+        echo $args['before_title'];
+        //Widget Title
+        echo get_field('review_widget_header', 'widget_' . $widget_id);
+        echo $args['after_title'];
 
         while ($loop->have_posts()) :
 
