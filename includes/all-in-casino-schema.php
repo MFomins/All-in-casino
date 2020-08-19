@@ -12,7 +12,7 @@ function add_review_list_schema()
         if (is_singular('casino-review')) {
             $review_schema = array(
                 '@context'  => "http://schema.org",
-                '@type'     => "Product",
+                '@type'     => "Organization",
                 'image' => get_the_post_thumbnail_url(),
                 'itemReviewed' => array(
                     '@type' => "Organization",
