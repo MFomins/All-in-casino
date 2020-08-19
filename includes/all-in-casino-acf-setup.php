@@ -1,5 +1,10 @@
 <?php
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+// OPTIONS PAGES
 if (function_exists('acf_add_options_page')) {
 
     acf_add_options_page(array(
@@ -16,6 +21,7 @@ if (function_exists('acf_add_options_page')) {
         'parent_slug'    => 'aic-general-settings',
     ));
 }
+// OPTIONS PAGES END
 
 if (function_exists('acf_add_local_field_group')) :
 

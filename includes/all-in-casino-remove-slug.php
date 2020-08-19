@@ -1,5 +1,9 @@
 <?php
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 add_filter('register_post_type_args', 'aic_change_cpt_slug', 10, 2);
 
 add_filter('post_type_link', 'aic_remove_slug', 10, 3);

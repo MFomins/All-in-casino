@@ -1,5 +1,9 @@
 <?php
 
+if (!defined('ABSPATH')) {
+	exit;
+}
+
 /**
  * The file that defines the core plugin class
  *
@@ -174,7 +178,7 @@ class All_In_Casino
 		/**
 		 * Functionality responsible for removing cpt slug
 		 */
-		if(get_field('disable_reviews_slug','options')) {
+		if (get_field('disable_reviews_slug', 'options')) {
 			require_once plugin_dir_path(dirname(__FILE__)) . 'includes/all-in-casino-remove-slug.php';
 		}
 
