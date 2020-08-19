@@ -14,7 +14,7 @@
     </div>
     <div class="casino-review-widget-lower">
         <div class="review-cta">
-            <a href="#">Get Bonus</a>
+            <a href="<?php the_field('review_redirect'); ?>"><?php _e('Get Bonus', 'all-in-casino'); ?></a>
         </div>
     </div>
 </div>
