@@ -128,6 +128,7 @@
         </div>
         <?php include ALL_IN_CASINO_BASE_DIR . 'templates/casino-reviews/parts/single-review-nav.php'; ?>
     </div>
+
     <div class="single-casino-lower aic-container">
         <main class="single-casino-main">
             <?php the_content(); ?>
