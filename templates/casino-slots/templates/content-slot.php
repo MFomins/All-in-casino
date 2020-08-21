@@ -19,13 +19,13 @@
                 </div>
                 <div class="single-info-item">
                     <img src="<?php echo ALL_IN_CASINO_PLUGIN_URL . 'public/img/money.png'; ?>" alt="Bet range">
-                    <span class="single-info-item-title"><?php _e('Bets','all-in-casino'); ?></span>
+                    <span class="single-info-item-title"><?php _e('Bet per Spin','all-in-casino'); ?></span>
                     <span class="single-info-item-data"><?php echo get_field('slot_bet_range'); ?></span>
                 </div>
                 <div class="single-info-item">
-                    <img src="<?php echo ALL_IN_CASINO_PLUGIN_URL . 'public/img/jackpot.png'; ?>" alt="Slot jackpot">
-                    <span class="single-info-item-title"><?php _e('Jackpot','all-in-casino'); ?></span>
-                    <span class="single-info-item-data"><?php echo get_field('slot_jackpot'); ?></span>
+                    <img src="<?php echo ALL_IN_CASINO_PLUGIN_URL . 'public/img/jackpot.png'; ?>" alt="Slot paylines">
+                    <span class="single-info-item-title"><?php _e('Paylines','all-in-casino'); ?></span>
+                    <span class="single-info-item-data"><?php echo get_field('slot_paylines'); ?></span>
                 </div>
             </div>
         </div>
