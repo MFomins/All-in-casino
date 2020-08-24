@@ -228,11 +228,19 @@ i.icon-info {
 
 .casino-reviews-4 .cta-wrap a {
     color: #fff;
-    background-color: #accd41;
+    background-color: #189e0c;
     text-transform: uppercase;
     padding: 5px 0;
     display: flex;
     justify-content: center;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+.casino-reviews-4 .cta-wrap a:hover {
+    background-color: #0f5f08;
+    transform:scale(1.02);
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.4);
 }
 
 .casino-reviews-4 .animated-button {
