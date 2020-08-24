@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: All In Casino\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-21 09:00+0000\n"
+"POT-Creation-Date: 2020-08-24 20:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -302,23 +302,27 @@ msgstr ""
 msgid "Customer Support"
 msgstr ""
 
-#: templates/casino-reviews/templates/content-review.php:14
+#: templates/casino-reviews/templates/content-review.php:7
+msgid "Updated: "
+msgstr ""
+
+#: templates/casino-reviews/templates/content-review.php:22
 msgid "Rating"
 msgstr ""
 
-#: templates/casino-reviews/templates/content-review.php:23
+#: templates/casino-reviews/templates/content-review.php:31
 msgid "Withdrawal time"
 msgstr ""
 
-#: templates/casino-reviews/templates/content-review.php:27
+#: templates/casino-reviews/templates/content-review.php:35
 msgid "Welcome bonus"
 msgstr ""
 
-#: templates/casino-reviews/templates/content-review.php:38
+#: templates/casino-reviews/templates/content-review.php:46
 msgid "Play Here!"
 msgstr ""
 
-#: templates/casino-reviews/templates/content-review.php:89
+#: templates/casino-reviews/templates/content-review.php:97
 #: templates/casino-reviews/widgets/casino-review-widget.php:17
 msgid "Get Bonus"
 msgstr ""

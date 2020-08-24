@@ -1,5 +1,13 @@
 <div class="single-casino-review">
     <div class="single-casino-upper">
+        <div class="aic-container">
+            <div id="breadcrumbs">
+                <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
+                <div class="last-modified">
+                    <span> <?php _e("Updated: ", "all-in-casino") . the_modified_date("d-m-y"); ?></span>
+                </div>
+            </div>
+        </div>
         <div class="head-bonus-wrap aic-container">
             <div class="single-casino-upper-left">
                 <div class="upper-left-logo">
