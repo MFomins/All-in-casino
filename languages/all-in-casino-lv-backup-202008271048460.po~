@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: All In Casino\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-21 09:00+0000\n"
-"PO-Revision-Date: 2020-08-21 09:00+0000\n"
+"POT-Creation-Date: 2020-08-24 20:05+0000\n"
+"PO-Revision-Date: 2020-08-27 10:48+0000\n"
 "Last-Translator: Kristaps Ritins\n"
 "Language-Team: Latvian\n"
 "Language: lv\n"
@@ -280,45 +280,49 @@ msgstr "Reģistrēties"
 #: templates/casino-reviews/parts/reviews-payments-tab.php:6
 #: templates/casino-reviews/parts/single-review-aside.php:25
 msgid "Deposit Methods"
-msgstr ""
+msgstr "Iemaksas metodes"
 
 #: templates/casino-reviews/parts/reviews-payments-tab.php:10
 msgid "Withdraw methods"
-msgstr ""
+msgstr "Izmaksas metodes"
 
 #: templates/casino-reviews/parts/single-review-aside.php:3
 msgid "Information"
-msgstr ""
+msgstr "Informācija"
 
 #: templates/casino-reviews/parts/single-review-aside.php:42
 msgid "Withdraw Methods"
-msgstr ""
+msgstr "Izmaksas metodes"
 
 #: templates/casino-reviews/parts/single-review-aside.php:61
 msgid "Providers"
-msgstr ""
+msgstr "Programmatūra"
 
 #: templates/casino-reviews/parts/single-review-aside.php:80
 msgid "Customer Support"
 msgstr ""
 
-#: templates/casino-reviews/templates/content-review.php:14
+#: templates/casino-reviews/templates/content-review.php:7
+msgid "Updated: "
+msgstr "Atjaunots: "
+
+#: templates/casino-reviews/templates/content-review.php:22
 msgid "Rating"
 msgstr "Reitings"
 
-#: templates/casino-reviews/templates/content-review.php:23
+#: templates/casino-reviews/templates/content-review.php:31
 msgid "Withdrawal time"
 msgstr "Izmaksas laiks"
 
-#: templates/casino-reviews/templates/content-review.php:27
+#: templates/casino-reviews/templates/content-review.php:35
 msgid "Welcome bonus"
 msgstr "Reģistrācijas bonuss"
 
-#: templates/casino-reviews/templates/content-review.php:38
+#: templates/casino-reviews/templates/content-review.php:46
 msgid "Play Here!"
 msgstr "Spēlēt šeit!"
 
-#: templates/casino-reviews/templates/content-review.php:89
+#: templates/casino-reviews/templates/content-review.php:97
 #: templates/casino-reviews/widgets/casino-review-widget.php:17
 msgid "Get Bonus"
 msgstr "Iegūt bonusu!"
