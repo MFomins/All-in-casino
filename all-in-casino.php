@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'ALL_IN_CASINO_VERSION', '1.0.31' );
+define( 'ALL_IN_CASINO_VERSION', '1.0.32' );
 
 define('ALL_IN_CASINO_NAME', 'all-in-casino');
 
