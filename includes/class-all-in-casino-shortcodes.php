@@ -101,6 +101,7 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
             $atts = shortcode_atts(
                 array(
                     'reviews' => '',
+                    'limit' => get_option('posts_per_page'),
                 ),
                 $atts,
                 'casino_reviews_list'
@@ -111,7 +112,7 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
 
             $loop_args = array(
                 'post_type' => 'casino-review',
-                'posts_per_page' => get_option('posts_per_page'),
+                'posts_per_page' => $atts['limit'],
                 'orderby' => 'post_name__in',
             );
 
