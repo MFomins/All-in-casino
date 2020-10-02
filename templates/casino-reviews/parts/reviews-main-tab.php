@@ -1,12 +1,10 @@
-<div class="casino-reviews-1"
-
-<?php if (get_field('review_bg_color')) : ?>
-    <?php echo 'style="background-color:'.get_field('review_bg_color').'"'; ?>
-    <?php endif; ?>>
+<div class="casino-reviews-1" <?php if (get_field('review_bg_color')) : ?> <?php echo 'style="background-color:' . get_field('review_bg_color') . '"'; ?> <?php endif; ?>>
     <?php if (has_post_thumbnail()) : ?>
         <a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow"><?php the_post_thumbnail(); ?></a>
     <?php endif; ?>
-    <a href="<?php echo get_permalink(); ?>" itemprop="url"><span itemprop="name"><?php the_title(); ?></span> <i class="icon-right"></i></a>
+    <a href="<?php echo get_permalink(); ?>" <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="url"';
+                                                endif; ?>><span <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="name"';
+                                                                endif; ?>><?php the_title(); ?></span> <i class="icon-right"></i></a>
 </div>
 <div class="casino-reviews-2">
     <div class="bonus-main-line"><?php echo get_field('review_bonus_text_first_line'); ?></div>

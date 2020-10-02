@@ -1,5 +1,7 @@
-<div class="casino-reviews-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <span class="position" itemprop="position" style="display: none;"><?php echo $num; ?></span>
+<div class="casino-reviews-item" <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"';
+                                    endif; ?>>
+    <span class="position" <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="position"';
+                            endif; ?> style="display: none;"><?php echo $num; ?></span>
     <?php if (get_field('review_more_info_enable') == true) : ?>
         <div class="tabs-box">
             <div class="tabs-box-item-wrap">

@@ -102,6 +102,7 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
                 array(
                     'reviews' => '',
                     'limit' => get_option('posts_per_page'),
+                    'itemlist' => '',
                 ),
                 $atts,
                 'casino_reviews_list'
@@ -125,7 +126,8 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
             ob_start();
         ?>
 
-            <div class="casino-reviews-list" itemtype="https://schema.org/ItemList">
+            <div class="casino-reviews-list" <?php if ($atts['itemlist'] == 'on') : echo 'itemscope itemtype="https://schema.org/ItemList"';
+                                                endif; ?>>
                 <?php
 
                 $num = 0;
