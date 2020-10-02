@@ -6,7 +6,7 @@
     <?php if (has_post_thumbnail()) : ?>
         <a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow"><?php the_post_thumbnail(); ?></a>
     <?php endif; ?>
-    <a href="<?php echo get_permalink(); ?>"><span itemprop="name"><?php the_title(); ?></span> <i class="icon-right"></i></a>
+    <a href="<?php echo get_permalink(); ?>" itemprop="item"><span itemprop="name"><?php the_title(); ?></span> <i class="icon-right"></i></a>
 </div>
 <div class="casino-reviews-2">
     <div class="bonus-main-line"><?php echo get_field('review_bonus_text_first_line'); ?></div>
