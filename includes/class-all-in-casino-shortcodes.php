@@ -125,10 +125,12 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
             ob_start();
         ?>
 
-            <div class="casino-reviews-list">
+            <div class="casino-reviews-list" itemtype="https://schema.org/ItemList">
                 <?php
-                while ($loop->have_posts()) :
 
+                $num = 0;
+                while ($loop->have_posts()) :
+                    $num++;
                     $loop->the_post();
 
                     include ALL_IN_CASINO_BASE_DIR . 'templates/casino-reviews/casino-reviews-shortcode.php';
