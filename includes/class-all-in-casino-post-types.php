@@ -149,7 +149,7 @@ class All_In_Casino_Post_Types
             'has_archive'        => false,
             'hierarchical'       => false,
             'menu_position'      => null,
-            'menu_icon'          => 'dashicons-admin-collapse',
+            'menu_icon'          => 'dashicons-games',
             'supports'           => array('title', 'editor', 'author', 'thumbnail'),
         );
 

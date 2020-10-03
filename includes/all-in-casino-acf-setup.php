@@ -8,11 +8,12 @@ if (!defined('ABSPATH')) {
 if (function_exists('acf_add_options_page')) {
 
     acf_add_options_page(array(
-        'page_title'     => 'AIC Settings',
+        'page_title'    => 'AIC Settings',
         'menu_title'    => 'AIC Settings',
         'menu_slug'     => 'aic-general-settings',
         'capability'    => 'edit_posts',
-        'redirect'        => false
+        'icon_url'      => 'dashicons-edit-large',
+        'redirect'      => false
     ));
 
     acf_add_options_sub_page(array(
@@ -26,218 +27,8 @@ if (function_exists('acf_add_options_page')) {
 if (function_exists('acf_add_local_field_group')) :
 
     acf_add_local_field_group(array(
-        'key' => 'group_5f215b10d2c61',
-        'title' => 'AIC Settings',
-        'fields' => array(
-            array(
-                'key' => 'field_5f272f2f4cb96',
-                'label' => 'Reviews slug',
-                'name' => '',
-                'type' => 'tab',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'placement' => 'top',
-                'endpoint' => 0,
-            ),
-            array(
-                'key' => 'field_5f215b1a7f073',
-                'label' => 'Disable reviews slug',
-                'name' => 'disable_reviews_slug',
-                'type' => 'true_false',
-                'instructions' => 'Disables reviews slug. Remember to refresh/flush permalinks at <strong>Settings -> Permalinks -> Save Changes</strong>',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'message' => '',
-                'default_value' => 0,
-                'ui' => 1,
-                'ui_on_text' => 'Enable',
-                'ui_off_text' => 'Disable',
-            ),
-            array(
-                'key' => 'field_5f272df02fde4',
-                'label' => 'Schema',
-                'name' => '',
-                'type' => 'tab',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'placement' => 'left',
-                'endpoint' => 0,
-            ),
-            array(
-                'key' => 'field_5f2733f479b39',
-                'label' => 'Enable Schema',
-                'name' => 'enable_schema',
-                'type' => 'true_false',
-                'instructions' => 'Enable casino reviews schema',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'message' => '',
-                'default_value' => 0,
-                'ui' => 1,
-                'ui_on_text' => 'Enable',
-                'ui_off_text' => 'Disable',
-            ),
-            array(
-                'key' => 'field_5f272e0a2fde5',
-                'label' => 'Site/author name',
-                'name' => 'reviews_schema_name',
-                'type' => 'text',
-                'instructions' => 'Enter site name. For example - casinosite.com',
-                'required' => 0,
-                'conditional_logic' => array(
-                    array(
-                        array(
-                            'field' => 'field_5f2733f479b39',
-                            'operator' => '==',
-                            'value' => '1',
-                        ),
-                    ),
-                ),
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-            ),
-            array(
-                'key' => 'field_5f272ebe2fde6',
-                'label' => 'Site URL',
-                'name' => 'reviews_schema_site_url',
-                'type' => 'url',
-                'instructions' => 'Enter site URL',
-                'required' => 0,
-                'conditional_logic' => array(
-                    array(
-                        array(
-                            'field' => 'field_5f2733f479b39',
-                            'operator' => '==',
-                            'value' => '1',
-                        ),
-                    ),
-                ),
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-            ),
-        ),
-        'location' => array(
-            array(
-                array(
-                    'param' => 'options_page',
-                    'operator' => '==',
-                    'value' => 'aic-general-settings',
-                ),
-            ),
-        ),
-        'menu_order' => 0,
-        'position' => 'normal',
-        'style' => 'default',
-        'label_placement' => 'top',
-        'instruction_placement' => 'label',
-        'hide_on_screen' => '',
-        'active' => true,
-        'description' => '',
-    ));
-
-    acf_add_local_field_group(array(
-        'key' => 'group_5f17f686c26ad',
-        'title' => 'Casino Review Widget',
-        'fields' => array(
-            array(
-                'key' => 'field_5f17f6b3fb149',
-                'label' => 'Header',
-                'name' => 'review_widget_header',
-                'type' => 'text',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-            ),
-            array(
-                'key' => 'field_5f3ce682775a9',
-                'label' => 'Reviews to show',
-                'name' => 'review_widget_post_object',
-                'type' => 'post_object',
-                'instructions' => 'Choose casino reviews you want to show',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'post_type' => array(
-                    0 => 'casino-review',
-                ),
-                'taxonomy' => '',
-                'allow_null' => 0,
-                'multiple' => 1,
-                'return_format' => 'id',
-                'ui' => 1,
-            ),
-        ),
-        'location' => array(
-            array(
-                array(
-                    'param' => 'widget',
-                    'operator' => '==',
-                    'value' => 'casino_review',
-                ),
-            ),
-        ),
-        'menu_order' => 0,
-        'position' => 'normal',
-        'style' => 'default',
-        'label_placement' => 'top',
-        'instruction_placement' => 'label',
-        'hide_on_screen' => '',
-        'active' => true,
-        'description' => '',
-    ));
-
-    acf_add_local_field_group(array(
         'key' => 'group_5f05bddf850fc',
-        'title' => 'Casino Reviews',
+        'title' => 'AIC Casino Reviews',
         'fields' => array(
             array(
                 'key' => 'field_5f1febd1d3aad',
@@ -912,51 +703,8 @@ if (function_exists('acf_add_local_field_group')) :
     ));
 
     acf_add_local_field_group(array(
-        'key' => 'group_5f0488c4f0ee0',
-        'title' => 'Casino Slot Widget',
-        'fields' => array(
-            array(
-                'key' => 'field_5f0488cb37cf1',
-                'label' => 'Header',
-                'name' => 'header',
-                'type' => 'text',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-            ),
-        ),
-        'location' => array(
-            array(
-                array(
-                    'param' => 'widget',
-                    'operator' => '==',
-                    'value' => 'casino_slot',
-                ),
-            ),
-        ),
-        'menu_order' => 0,
-        'position' => 'normal',
-        'style' => 'default',
-        'label_placement' => 'top',
-        'instruction_placement' => 'label',
-        'hide_on_screen' => '',
-        'active' => true,
-        'description' => '',
-    ));
-
-    acf_add_local_field_group(array(
         'key' => 'group_5f043a37d09db',
-        'title' => 'Casino Slots',
+        'title' => 'AIC Casino Slots',
         'fields' => array(
             array(
                 'key' => 'field_5f043d0366707',
@@ -1158,7 +906,7 @@ if (function_exists('acf_add_local_field_group')) :
 
     acf_add_local_field_group(array(
         'key' => 'group_5f0228af1171e',
-        'title' => 'Featured Casino',
+        'title' => 'AIC Featured Casino',
         'fields' => array(
             array(
                 'key' => 'field_5f212ff51c314',
@@ -1339,6 +1087,114 @@ if (function_exists('acf_add_local_field_group')) :
                     'param' => 'options_page',
                     'operator' => '==',
                     'value' => 'acf-options-featured-casino',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+    ));
+
+    acf_add_local_field_group(array(
+        'key' => 'group_5f17f686c26ad',
+        'title' => 'AIC Review Widget',
+        'fields' => array(
+            array(
+                'key' => 'field_5f17f6b3fb149',
+                'label' => 'Header',
+                'name' => 'review_widget_header',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ),
+            array(
+                'key' => 'field_5f3ce682775a9',
+                'label' => 'Reviews to show',
+                'name' => 'review_widget_post_object',
+                'type' => 'post_object',
+                'instructions' => 'Choose casino reviews you want to show',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'post_type' => array(
+                    0 => 'casino-review',
+                ),
+                'taxonomy' => '',
+                'allow_null' => 0,
+                'multiple' => 1,
+                'return_format' => 'id',
+                'ui' => 1,
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'widget',
+                    'operator' => '==',
+                    'value' => 'casino_review',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+    ));
+
+    acf_add_local_field_group(array(
+        'key' => 'group_5f0488c4f0ee0',
+        'title' => 'AIC Slot Widget',
+        'fields' => array(
+            array(
+                'key' => 'field_5f0488cb37cf1',
+                'label' => 'Header',
+                'name' => 'header',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'widget',
+                    'operator' => '==',
+                    'value' => 'casino_slot',
                 ),
             ),
         ),
