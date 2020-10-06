@@ -37,7 +37,6 @@
     <?php if (get_field('review_enable_tnc') == true) : ?>
         <div class="casino-review-terms">
             <?php echo get_field('review_terms'); ?>
-            <?php echo $num; ?>
         </div>
     <?php endif; ?>
 </div>
