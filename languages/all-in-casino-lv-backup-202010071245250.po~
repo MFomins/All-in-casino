@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: All In Casino\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-07 12:14+0000\n"
-"PO-Revision-Date: 2020-10-07 12:23+0000\n"
+"PO-Revision-Date: 2020-10-07 12:45+0000\n"
 "Last-Translator: Kristaps Ritins\n"
 "Language-Team: Latvian\n"
 "Language: lv\n"
@@ -67,7 +67,7 @@ msgstr ""
 #: templates/casino-slots/casino-slots-shortcode.php:19
 #: templates/casino-slots/templates/content-slot.php:22
 msgid "Bet per Spin"
-msgstr ""
+msgstr "Maksa par griezienu"
 
 #: templates/casino-reviews/parts/single-review-aside.php:80
 msgid "Customer Support"
@@ -195,7 +195,7 @@ msgstr ""
 #: templates/casino-slots/casino-slots-shortcode.php:23
 #: templates/casino-slots/templates/content-slot.php:27
 msgid "Paylines"
-msgstr ""
+msgstr "Maksas līnijas"
 
 #: templates/casino-reviews/parts/reviews-main-tab.php:34
 msgid "Play"
@@ -226,7 +226,7 @@ msgstr ""
 #: includes/class-all-in-casino-post-types.php:67
 msgctxt "Post type singular name"
 msgid "Casino Review"
-msgstr "Apskats"
+msgstr ""
 
 #: includes/class-all-in-casino-post-types.php:115
 msgctxt "Post type singular name"
