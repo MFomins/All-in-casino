@@ -84,7 +84,7 @@ function add_review_list_schema()
                 ),
                 'reviewRating' => array(
                     '@type' => "Rating",
-                    'worstRating' => 0,
+                    'worstRating' => 1,
                     'bestRating' => 5,
                     'ratingValue' => get_field('review_rating'),
                 )
