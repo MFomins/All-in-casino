@@ -166,14 +166,9 @@ class All_In_Casino
 		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/all-in-casino-acf-setup.php';
 
 		/**
-		 * Functionality responsible for adding featured casino at the bottom of the pages
+		 * Helper Functions
 		 */
-		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/all-in-casino-featured-casino.php';
-
-		/**
-		 * Functionality responsible for adding schema to casino reviews
-		 */
-		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/all-in-casino-schema.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/helper-functions.php';
 
 		/**
 		 * Functionality responsible for removing cpt slug

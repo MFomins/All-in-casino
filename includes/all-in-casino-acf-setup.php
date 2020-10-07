@@ -4,19 +4,6 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-
-//Changes the slug of the custom post type
-add_filter('register_post_type_args', 'wpse247328_register_post_type_args', 10, 2);
-function wpse247328_register_post_type_args($args, $post_type)
-{
-
-    if ('casino-review' === $post_type && get_field('aic_review_slug', 'options')) {
-        $args['rewrite']['slug'] = get_field('aic_review_slug', 'options');
-    }
-
-    return $args;
-}
-
 // OPTIONS PAGES
 if (function_exists('acf_add_options_page')) {
 
