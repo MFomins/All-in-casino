@@ -4,6 +4,19 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+
+//Changes the slug of the custom post type
+add_filter('register_post_type_args', 'wpse247328_register_post_type_args', 10, 2);
+function wpse247328_register_post_type_args($args, $post_type)
+{
+
+    if ('casino-review' === $post_type && get_field('aic_review_slug', 'options')) {
+        $args['rewrite']['slug'] = get_field('aic_review_slug', 'options');
+    }
+
+    return $args;
+}
+
 // OPTIONS PAGES
 if (function_exists('acf_add_options_page')) {
 
@@ -1157,6 +1170,33 @@ if (function_exists('acf_add_local_field_group')) :
                 'ui' => 1,
                 'ui_on_text' => 'Disabled',
                 'ui_off_text' => 'Enabled',
+            ),
+            array(
+                'key' => 'field_5f7da3c8a094a',
+                'label' => 'Review Slug',
+                'name' => 'aic_review_slug',
+                'type' => 'text',
+                'instructions' => 'Choose the slug of the casino review post type. Remember to refresh/flush permalinks at <strong>Settings -> Permalinks -> Save Changes</strong>',
+                'required' => 0,
+                'conditional_logic' => array(
+                    array(
+                        array(
+                            'field' => 'field_5f215b1a7f073',
+                            'operator' => '!=',
+                            'value' => '1',
+                        ),
+                    ),
+                ),
+                'wrapper' => array(
+                    'width' => '66',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
             ),
             array(
                 'key' => 'field_5f272df02fde4',
