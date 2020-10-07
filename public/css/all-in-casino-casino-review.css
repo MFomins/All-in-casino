@@ -11,9 +11,10 @@
     justify-content: space-between;
 }
 
-.single-casino-h1 {
+.single-casino-h1 h1{
     color: #fff;
-    font-size: 12px;
+    font-size: 12px!important;
+    font-weight: normal;
 }
 
 .single-casino-upper-right {

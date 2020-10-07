@@ -51,7 +51,9 @@
                 </table>
             </div>
             <div class="single-casino-upper-right">
-                <div class="single-casino-h1"><?php echo the_title(); ?></div>
+                <div class="single-casino-h1">
+                    <h1><?php echo the_title(); ?></h1>
+                </div>
                 <div class="upper-right-bonus-info">
                     <a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow">
                         <span><?php the_field('review_bonus_text_first_line'); ?></span>

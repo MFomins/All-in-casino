@@ -1,0 +1,364 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: All In Casino\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-07 12:14+0000\n"
+"PO-Revision-Date: 2020-10-07 12:36+0000\n"
+"Last-Translator: Kristaps Ritins\n"
+"Language-Team: Polski\n"
+"Language: pl_PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.3; wp-5.5.1"
+
+#: includes/class-all-in-casino-post-types.php:70
+#: includes/class-all-in-casino-post-types.php:118
+msgid "Add New"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:71
+msgid "Add New Casino Review"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:119
+msgid "Add New Casino Slot"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:69
+msgctxt "Add New on Toolbar"
+msgid "Casino Review"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:117
+msgctxt "Add New on Toolbar"
+msgid "Casino Slot"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:68
+msgctxt "Admin Menu text"
+msgid "Casino Reviews"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:116
+msgctxt "Admin Menu text"
+msgid "Casino Slots"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:75
+msgid "All Casino Reviews"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:123
+msgid "All Casino Slots"
+msgstr ""
+
+#. Name of the plugin
+msgid "All In Casino"
+msgstr ""
+
+#. Description of the plugin
+msgid "All In Casino plugin"
+msgstr ""
+
+#: templates/casino-slots/casino-slots-shortcode.php:19
+#: templates/casino-slots/templates/content-slot.php:22
+msgid "Bet per Spin"
+msgstr ""
+"Postaw na obrót\n"
+
+#: templates/casino-reviews/parts/single-review-aside.php:80
+msgid "Customer Support"
+msgstr ""
+"Obsługa klienta\n"
+
+#: templates/casino-reviews/parts/reviews-payments-tab.php:6
+#: templates/casino-reviews/parts/single-review-aside.php:25
+msgid "Deposit Methods"
+msgstr ""
+"Metody wpłaty\n"
+
+#: includes/class-all-in-casino-post-types.php:73
+msgid "Edit Casino Review"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:121
+msgid "Edit Casino Slot"
+msgstr ""
+
+#: templates/casino-reviews/templates/content-review.php:97
+#: templates/casino-reviews/widgets/casino-review-widget.php:17
+msgid "Get Bonus"
+msgstr ""
+"Zdobądź bonus\n"
+
+#: templates/casino-reviews/parts/single-review-aside.php:3
+msgid "Information"
+msgstr "Informacja"
+
+#. Author of the plugin
+msgid "KR"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:72
+msgid "New Casino Review"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:120
+msgid "New Casino Slot"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:79
+msgid "No casino reviews found in Trash."
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:78
+msgid "No casino reviews found."
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:127
+msgid "No casino slots found in Trash."
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:126
+msgid "No casino slots found."
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:80
+msgctxt ""
+"Overrides the “Featured Image” phrase for this post type. Added in 4.3"
+msgid "Casino review Cover Image"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:128
+msgctxt ""
+"Overrides the “Featured Image” phrase for this post type. Added in 4.3"
+msgid "Casino slot Cover Image"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:85
+msgctxt ""
+"Overrides the “Insert into post”/”Insert into page” phrase (used when "
+"inserting media into a post). Added in 4.4"
+msgid "Insert into casino review"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:133
+msgctxt ""
+"Overrides the “Insert into post”/”Insert into page” phrase (used when "
+"inserting media into a post). Added in 4.4"
+msgid "Insert into casino slot"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:82
+#: includes/class-all-in-casino-post-types.php:130
+msgctxt ""
+"Overrides the “Remove featured image” phrase for this post type. Added in 4.3"
+msgid "Remove cover image"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:81
+#: includes/class-all-in-casino-post-types.php:129
+msgctxt ""
+"Overrides the “Set featured image” phrase for this post type. Added in 4.3"
+msgid "Set cover image"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:86
+msgctxt ""
+"Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used "
+"when viewing media attached to a post). Added in 4.4"
+msgid "Uploaded to this casino review"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:134
+msgctxt ""
+"Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used "
+"when viewing media attached to a post). Added in 4.4"
+msgid "Uploaded to this casino slot"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:83
+#: includes/class-all-in-casino-post-types.php:131
+msgctxt ""
+"Overrides the “Use as featured image” phrase for this post type. Added in 4.3"
+msgid "Use as cover image"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:77
+msgid "Parent Casino Reviews:"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:125
+msgid "Parent Casino Slots:"
+msgstr ""
+
+#: templates/casino-slots/casino-slots-shortcode.php:23
+#: templates/casino-slots/templates/content-slot.php:27
+msgid "Paylines"
+msgstr ""
+"Linie wygrywające\n"
+
+#: templates/casino-reviews/parts/reviews-main-tab.php:34
+msgid "Play"
+msgstr "Grać"
+
+#: templates/casino-slots/templates/content-slot.php:10
+msgid "Play for play money"
+msgstr ""
+"Graj na wirtualne pieniądze\n"
+
+#: templates/casino-slots/templates/content-slot.php:9
+msgid "Play for real money"
+msgstr ""
+"Graj na prawdziwe pieniądze\n"
+
+#: templates/casino-reviews/templates/content-review.php:46
+msgid "Play Here!"
+msgstr ""
+"Graj tutaj!\n"
+
+#: includes/class-all-in-casino-post-types.php:66
+msgctxt "Post type general name"
+msgid "Casino Reviews [casino_reviews_list]"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:114
+msgctxt "Post type general name"
+msgid "Casino Slots [casino_slots_list]"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:67
+msgctxt "Post type singular name"
+msgid "Casino Review"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:115
+msgctxt "Post type singular name"
+msgid "Casino Slot"
+msgstr ""
+
+#: templates/casino-reviews/parts/single-review-aside.php:61
+msgid "Providers"
+msgstr "Dostawcy"
+
+#: templates/casino-reviews/templates/content-review.php:22
+msgid "Rating"
+msgstr "Ocena"
+
+#: includes/all-in-casino-featured-casino.php:44
+msgid "Register"
+msgstr ""
+
+#: templates/casino-slots/casino-slots-shortcode.php:28
+#: templates/casino-slots/widgets/casino-slot-widget.php:12
+msgid "Review"
+msgstr ""
+
+#: templates/casino-slots/casino-slots-shortcode.php:15
+#: templates/casino-slots/templates/content-slot.php:17
+msgid "RTP"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:87
+msgctxt ""
+"Screen reader text for the filter links heading on the post type listing "
+"screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
+msgid "Filter casino reviews list"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:135
+msgctxt ""
+"Screen reader text for the filter links heading on the post type listing "
+"screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
+msgid "Filter casino slots list"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:89
+msgctxt ""
+"Screen reader text for the items list heading on the post type listing "
+"screen. Default “Posts list”/”Pages list”. Added in 4.4"
+msgid "Casino reviews list"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:137
+msgctxt ""
+"Screen reader text for the items list heading on the post type listing "
+"screen. Default “Posts list”/”Pages list”. Added in 4.4"
+msgid "Casino slots list"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:88
+msgctxt ""
+"Screen reader text for the pagination heading on the post type listing "
+"screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4"
+msgid "Casino reviews list navigation"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:136
+msgctxt ""
+"Screen reader text for the pagination heading on the post type listing "
+"screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4"
+msgid "Casino slots list navigation"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:76
+msgid "Search Casino Reviews"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:124
+msgid "Search Casino Slots"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:84
+msgctxt ""
+"The post type archive label used in nav menus. Default “Post Archives”. "
+"Added in 4.4"
+msgid "Casino review archives"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:132
+msgctxt ""
+"The post type archive label used in nav menus. Default “Post Archives”. "
+"Added in 4.4"
+msgid "Casino slot archives"
+msgstr ""
+
+#: templates/casino-reviews/templates/content-review.php:7
+msgid "Updated: "
+msgstr "Zaktualizowano: "
+
+#: includes/class-all-in-casino-post-types.php:74
+msgid "View Casino Review"
+msgstr ""
+
+#: includes/class-all-in-casino-post-types.php:122
+msgid "View Casino Slot"
+msgstr ""
+
+#: templates/casino-reviews/templates/content-review.php:35
+msgid "Welcome bonus"
+msgstr ""
+"Bonus powitalny\n"
+
+#: templates/casino-reviews/parts/single-review-aside.php:42
+msgid "Withdraw Methods"
+msgstr ""
+"Metody wypłaty\n"
+
+#: templates/casino-reviews/parts/reviews-payments-tab.php:10
+msgid "Withdraw methods"
+msgstr ""
+
+#: templates/casino-reviews/templates/content-review.php:31
+msgid "Withdrawal time"
+msgstr ""
+"Czas karencji\n"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "yoursite.lv"
+msgstr ""
