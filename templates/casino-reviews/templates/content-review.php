@@ -141,14 +141,14 @@
 
     <div class="single-casino-lower aic-container">
         <main class="single-casino-main">
-            <div id="summary">
-
-                <div class="summary-content">
-
-                    <div class="summary-header"><?php the_field('review_review_summary'); ?></div>
-                    <p><?php the_field('review_summary_text'); ?></p>
+            <?php if (get_field('review_enable_summary')) : ?>
+                <div id="summary">
+                    <div class="summary-content">
+                        <div class="summary-header"><?php the_field('review_review_summary'); ?></div>
+                        <p><?php the_field('review_summary_text'); ?></p>
+                    </div>
                 </div>
-            </div>
+            <?php endif ?>
             <?php the_content(); ?>
         </main>
         <?php include ALL_IN_CASINO_BASE_DIR . 'templates/casino-reviews/parts/single-review-aside.php'; ?>
