@@ -287,6 +287,8 @@ class All_In_Casino
 		$this->loader->add_filter('single_template', $plugin_post_types, 'single_template_casino_slot');
 
 		$this->loader->add_filter('single_template', $plugin_post_types, 'single_template_casino_review');
+
+		$this->loader->add_filter('archive_template', $plugin_post_types, 'archive_template_casino_review');
 	}
 
 	public function define_shortcode_hooks()

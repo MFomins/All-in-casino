@@ -183,4 +183,19 @@ class All_In_Casino_Post_Types
 
         return $template;
     }
+
+
+    public function archive_template_casino_review($template)
+    {
+        if (is_archive('casino-review')) {
+            //Template for casino slot CPT
+            require_once ALL_IN_CASINO_BASE_DIR . 'public/class-all-in-casino-template-loader.php';
+
+            $template_loader = new All_In_Casino_Template_Loader();
+
+            return $template_loader->get_template_part('archive', 'casino-review', false);
+        }
+
+        return $template;
+    }
 }

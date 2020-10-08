@@ -2,7 +2,7 @@
 
 .single-casino-upper {
     background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(49, 57, 73, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(20, 24, 31, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #313949;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .head-bonus-wrap {
@@ -11,7 +11,7 @@
     justify-content: space-between;
 }
 
-.single-casino-h1 h1{
+.single-casino-h1 h1 {
     color: #fff;
     font-size: 12px!important;
     font-weight: normal;
@@ -141,8 +141,38 @@
     padding: 15px;
     margin: 20px;
     background-color: #fff;
-    border: 1px #eaeaea solid;
     flex: 0 0 70%;
+}
+
+#summary .summary-header {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+#summary {
+    position: relative;
+}
+
+#summary .summary-content {
+    padding: 20px;
+    margin: 0;
+    font-size: 15px;
+    line-height: 24px;
+    font-style: italic;
+    background: darkseagreen;
+    color: #fff;
+    border-left: 5px solid #333;
+    position: relative;
+}
+
+#summary .summary-content p {
+    margin: 0;
 }
 
 /* Tables */
