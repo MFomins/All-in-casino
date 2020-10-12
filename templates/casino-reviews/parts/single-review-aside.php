@@ -48,6 +48,7 @@
                 if ($withdrawal_methods) : ?>
                     <ul>
                         <?php foreach ($withdrawal_methods as $method) : ?>
+                            <?php var_dump($withdrawal_methods); ?>
                             <li><i class="icon-angle-double-right"></i><?php echo $method; ?></li>
                         <?php endforeach; ?>
                     </ul>
