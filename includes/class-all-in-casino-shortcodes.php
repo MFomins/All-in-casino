@@ -69,9 +69,20 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
 
         public function casino_slots_list($atts)
         {
+            $atts = shortcode_atts(
+                array(
+                    'limit' => get_option('posts_per_page'),
+                ),
+                $atts,
+                'casino_slots_list'
+            );
+
+            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
             $loop_args = array(
                 'post_type' => 'casino-slot',
-                'posts_per_page' => get_option('posts_per_page'),
+                'posts_per_page' => $atts['limit'],
+                'paged' => $paged,
             );
 
             $loop = new WP_Query($loop_args);
@@ -89,6 +100,23 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
 
                 endwhile;
                 wp_reset_postdata();
+                ?>
+            </div>
+            <div class="pagination">
+                <?php
+                $total_pages = $loop->max_num_pages;
+                if ($total_pages > 1) {
+                    $current_page = max(1, get_query_var('paged'));
+
+                    echo paginate_links(array(
+                        'base' => get_pagenum_link(1) . '%_%',
+                        'format' => '/page/%#%',
+                        'current' => $current_page,
+                        'total' => $total_pages,
+                        'prev_text'    => false,
+                        'next_text'    => false,
+                    ));
+                }
                 ?>
             </div>
 
@@ -141,7 +169,6 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
                 wp_reset_postdata();
                 ?>
             </div>
-
 <?php
             return ob_get_clean();
         }
