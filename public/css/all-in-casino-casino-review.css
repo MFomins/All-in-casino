@@ -18,7 +18,11 @@
 }
 
 .single-casino-aside ul {
-    list-style-type: none;
+    padding-left:0;
+}
+
+.single-casino-aside ul li {
+    list-style-type: none!important;
 }
 
 .single-casino-h1 h1 {
