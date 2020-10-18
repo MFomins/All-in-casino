@@ -17,6 +17,10 @@
     justify-content: space-between;
 }
 
+.single-casino-aside ul {
+    list-style-type: none;
+}
+
 .single-casino-h1 h1 {
     color: #fff;
     font-size: 12px!important;
