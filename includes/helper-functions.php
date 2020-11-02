@@ -53,7 +53,7 @@ function fc_add_content($content)
 
     $content_output .= '</div></div>';
 
-    if (get_field('fc_enable', 'options') == true) {
+    if (!is_singular('casino-review') && get_field('fc_enable', 'options') == true) {
         return $content . $content_output;
     } else {
         return $content;
