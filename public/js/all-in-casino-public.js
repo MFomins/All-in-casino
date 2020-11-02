@@ -35,4 +35,18 @@ jQuery(document).ready(function ($) {
 		var bottomBar = $(".fc-sticky-bottom");
 		bottomBar.fadeOut();
 	});
+
+
+	//Show cta window in casino review page
+	$(window).scroll(function () {
+		var scroll = $(window).scrollTop();
+
+		if (scroll >= 500) {
+			$(".single-casino-action").removeClass("hidden");
+		}
+
+		if (scroll < 500) {
+			$(".single-casino-action").addClass("hidden");
+		}
+	});
 });
