@@ -76,10 +76,14 @@
 
 .upper-right-minuses .field-item i {
     color: #e85f5f;
+    font-size: 14px;
+    margin-right: 5px;
 }
 
 .upper-right-pluses .field-item i {
     color: #1c9e0c;
+    font-size: 14px;
+    margin-right: 5px;
 }
 
 .upper-right-pluses img {
