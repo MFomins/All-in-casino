@@ -148,6 +148,12 @@
     transition-duration: .5s;
 }
 
+@media (max-width:767px) {
+    .upper-right-get-bonus a {
+        width:100%;
+    }
+}
+
 .upper-right-get-bonus a:hover {
     background-color: #0f5f08;
     text-decoration: none;
