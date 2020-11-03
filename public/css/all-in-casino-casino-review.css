@@ -154,7 +154,7 @@
 
 @media (max-width:767px) {
     .upper-right-get-bonus a {
-        width:100%;
+        width:100%!important;
     }
 }
 
