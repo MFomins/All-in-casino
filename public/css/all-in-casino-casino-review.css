@@ -178,9 +178,11 @@
     flex            : 0 0 70%;
 }
 
-.single-casino-main p a {
-    color      : #202a5b !important;
-    font-weight: bold;
+.single-casino-main p a,
+.single-casino-main span a {
+    color          : #202a5b !important;
+    font-weight    : bold;
+    text-decoration: underline;
 }
 
 #summary .summary-header {
