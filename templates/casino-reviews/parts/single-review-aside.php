@@ -49,8 +49,8 @@
                 if ($withdrawal_methods) : ?>
                     <ul>
                         <?php foreach ($withdrawal_methods as $method) : ?>
-                            <?php $tolowermethod = strtolower($method); ?>
-                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?><img src="<?php echo ALL_IN_CASINO_IMG . "payment-options/{$tolowermethod}.png" ?>" alt="<?php echo $tolowermethod; ?>"></li>
+                            <?php $tolowerwithdraw = strtolower($method); ?>
+                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?><img src="<?php echo ALL_IN_CASINO_IMG . "payment-options/{$tolowerwithdraw}.png" ?>" alt="<?php echo $tolowerwithdraw; ?>"></li>
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
