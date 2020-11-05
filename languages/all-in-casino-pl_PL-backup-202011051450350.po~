@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: All In Casino\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-07 12:14+0000\n"
-"PO-Revision-Date: 2020-10-07 12:36+0000\n"
+"PO-Revision-Date: 2020-10-07 12:37+0000\n"
 "Last-Translator: Kristaps Ritins\n"
 "Language-Team: Polski\n"
 "Language: pl_PL\n"
@@ -257,6 +257,7 @@ msgstr ""
 #: templates/casino-slots/widgets/casino-slot-widget.php:12
 msgid "Review"
 msgstr ""
+"Przejrzeć\n"
 
 #: templates/casino-slots/casino-slots-shortcode.php:15
 #: templates/casino-slots/templates/content-slot.php:17
