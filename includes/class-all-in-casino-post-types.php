@@ -63,7 +63,7 @@ class All_In_Casino_Post_Types
     public function register_cpt_casino_review()
     {
         $labels = array(
-            'name'                  => _x('Casino Reviews [casino_reviews_list]', 'Post type general name', 'all-in-casino'),
+            'name'                  => _x('Casino Reviews', 'Post type general name', 'all-in-casino'),
             'singular_name'         => _x('Casino Review', 'Post type singular name', 'all-in-casino'),
             'menu_name'             => _x('Casino Reviews', 'Admin Menu text', 'all-in-casino'),
             'name_admin_bar'        => _x('Casino Review', 'Add New on Toolbar', 'all-in-casino'),

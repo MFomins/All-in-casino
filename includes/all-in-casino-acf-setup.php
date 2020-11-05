@@ -789,6 +789,7 @@ if (function_exists('acf_add_local_field_group')) :
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
+        'modified' => false,
     ));
 
     acf_add_local_field_group(array(
@@ -991,6 +992,7 @@ if (function_exists('acf_add_local_field_group')) :
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
+        'modified' => false,
     ));
 
     acf_add_local_field_group(array(
@@ -1187,6 +1189,7 @@ if (function_exists('acf_add_local_field_group')) :
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
+        'modified' => false,
     ));
 
     acf_add_local_field_group(array(
@@ -1306,8 +1309,8 @@ if (function_exists('acf_add_local_field_group')) :
                 'message' => '',
                 'default_value' => 0,
                 'ui' => 1,
-                'ui_on_text' => 'Enable',
-                'ui_off_text' => 'Disable',
+                'ui_on_text' => 'Enabled',
+                'ui_off_text' => 'Disabled',
             ),
             array(
                 'key' => 'field_5f272e0a2fde5',
@@ -1362,7 +1365,7 @@ if (function_exists('acf_add_local_field_group')) :
             ),
             array(
                 'key' => 'field_5f7de11763da8',
-                'label' => 'Casino Review Archive',
+                'label' => 'Casino Archive',
                 'name' => '',
                 'type' => 'tab',
                 'instructions' => '',
@@ -1377,13 +1380,67 @@ if (function_exists('acf_add_local_field_group')) :
                 'endpoint' => 0,
             ),
             array(
-                'key' => 'field_5f7de12663da9',
-                'label' => 'asddssdasdads',
-                'name' => 'asddssdasdads',
-                'type' => 'wysiwyg',
+                'key' => 'field_5fa3f3f57d06b',
+                'label' => 'Enable archive page',
+                'name' => 'enable_archive',
+                'type' => 'true_false',
                 'instructions' => '',
                 'required' => 0,
                 'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'message' => '',
+                'default_value' => 0,
+                'ui' => 1,
+                'ui_on_text' => 'Enabled',
+                'ui_off_text' => 'Disabled',
+            ),
+            array(
+                'key' => 'field_5fa3f75397697',
+                'label' => 'Page Title',
+                'name' => 'review_archive_page_title',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => array(
+                    array(
+                        array(
+                            'field' => 'field_5fa3f3f57d06b',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                ),
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ),
+            array(
+                'key' => 'field_5fa3f74097696',
+                'label' => 'Page Content',
+                'name' => 'review_archive_page_content',
+                'type' => 'wysiwyg',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => array(
+                    array(
+                        array(
+                            'field' => 'field_5fa3f3f57d06b',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                ),
                 'wrapper' => array(
                     'width' => '',
                     'class' => '',
@@ -1478,6 +1535,7 @@ if (function_exists('acf_add_local_field_group')) :
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
+        'modified' => false,
     ));
 
     acf_add_local_field_group(array(
@@ -1521,6 +1579,7 @@ if (function_exists('acf_add_local_field_group')) :
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
+        'modified' => false,
     ));
 
 endif;

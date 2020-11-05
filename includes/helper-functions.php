@@ -96,8 +96,8 @@ function add_review_list_schema()
 
 add_action('wp_head', 'add_review_list_schema');
 
-//Changes the slug of the custom post type
-function wpse247328_register_post_type_args($args, $post_type)
+//Changes the slug of the casino reiviews post type
+function aic_register_post_type_args($args, $post_type)
 {
 
     if ('casino-review' === $post_type && get_field('aic_review_slug', 'options')) {
@@ -107,4 +107,16 @@ function wpse247328_register_post_type_args($args, $post_type)
     return $args;
 }
 
-add_filter('register_post_type_args', 'wpse247328_register_post_type_args', 10, 2);
+add_filter('register_post_type_args', 'aic_register_post_type_args', 10, 2);
+
+//Add archive page option 
+function aic_change_archive($args, $post_type)
+{
+
+    if ('casino-review' === $post_type && get_field('enable_archive', 'options')) {
+        $args['has_archive'] = true;
+    }
+
+    return $args;
+}
+add_filter('register_post_type_args', 'aic_change_archive', 10, 2);
