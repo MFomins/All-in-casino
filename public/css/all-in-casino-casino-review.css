@@ -251,6 +251,28 @@ table {
     margin: 20px 0;
 }
 
+.single-casino-aside img {
+    height      : auto;
+    object-fit  : contain;
+    margin-left : 10px;
+    justify-self: flex-end;
+}
+
+.single-casino-aside .aside-deposit-methods img,
+.single-casino-aside .aside-withdraw-methods img {
+    width: 50px;
+}
+
+.single-casino-aside .aside-providers img {
+    width       : 80px;
+}
+
+.single-casino-aside .aside-item ul li {
+    display    : flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
 .aside-item {
     background: #fff;
     border    : 1px #eaeaea solid;

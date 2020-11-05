@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'ALL_IN_CASINO_VERSION', '1.0.46' );
+define( 'ALL_IN_CASINO_VERSION', '1.0.47' );
 
 define('ALL_IN_CASINO_NAME', 'all-in-casino');
 
@@ -39,6 +39,9 @@ define('ALL_IN_CASINO_BASE_DIR', plugin_dir_path(__FILE__));
 
 //Plugin directory URL
 define('ALL_IN_CASINO_PLUGIN_URL', plugin_dir_url(__FILE__));
+
+//Plugin directory URL
+define('ALL_IN_CASINO_IMG', plugin_dir_url(__FILE__) . "public/img/");
 
 /**
  * The code that runs during plugin activation.

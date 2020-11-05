@@ -30,7 +30,7 @@
                 if ($deposit_methods) : ?>
                     <ul>
                         <?php foreach ($deposit_methods as $method) : ?>
-                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?></li>
+                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?><img src="<?php echo ALL_IN_CASINO_IMG . "payment-options/{$method}.png" ?>" alt="<?php echo $method; ?>-deposit"></li>
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
@@ -48,7 +48,7 @@
                 if ($withdrawal_methods) : ?>
                     <ul>
                         <?php foreach ($withdrawal_methods as $method) : ?>
-                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?></li>
+                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?><img src="<?php echo ALL_IN_CASINO_IMG . "payment-options/{$method}.png" ?>" alt="<?php echo $method; ?>"></li>
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
@@ -67,7 +67,11 @@
                 if ($providers) : ?>
                     <ul>
                         <?php foreach ($providers as $provider) : ?>
-                            <li><i class="icon-angle-double-right"></i><?php echo $provider; ?></li>
+                            <li>
+                                <i class="icon-angle-double-right"></i>
+                                <?php echo $provider; ?>
+                                <img src="<?php echo ALL_IN_CASINO_IMG . "providers/{$provider}.png" ?>" alt="<?php echo $provider; ?>">
+                            </li>
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
