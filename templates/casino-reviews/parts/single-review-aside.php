@@ -30,7 +30,8 @@
                 if ($deposit_methods) : ?>
                     <ul>
                         <?php foreach ($deposit_methods as $method) : ?>
-                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?><img src="<?php echo ALL_IN_CASINO_IMG . "payment-options/{$method}.png" ?>" alt="<?php echo $method; ?>-deposit"></li>
+                            <?php $tolowerdeposit = $method; ?>
+                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?><img src="<?php echo ALL_IN_CASINO_IMG . "payment-options/{$tolowerdeposit}.png" ?>" alt="<?php echo $tolowerdeposit; ?>-deposit"></li>
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
@@ -48,7 +49,8 @@
                 if ($withdrawal_methods) : ?>
                     <ul>
                         <?php foreach ($withdrawal_methods as $method) : ?>
-                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?><img src="<?php echo ALL_IN_CASINO_IMG . "payment-options/{$method}.png" ?>" alt="<?php echo $method; ?>"></li>
+                            <?php $tolowermethod = strtolower($method); ?>
+                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?><img src="<?php echo ALL_IN_CASINO_IMG . "payment-options/{$tolowermethod}.png" ?>" alt="<?php echo $tolowermethod; ?>"></li>
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
