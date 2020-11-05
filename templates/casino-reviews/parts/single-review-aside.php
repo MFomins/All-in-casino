@@ -70,7 +70,8 @@
                             <li>
                                 <i class="icon-angle-double-right"></i>
                                 <?php echo $provider; ?>
-                                <img src="<?php echo ALL_IN_CASINO_IMG . "providers/{$provider}.png" ?>" alt="<?php echo $provider; ?>">
+                                <?php $tolowerprovider = strtolower($provider); ?>
+                                <img src="<?php echo ALL_IN_CASINO_IMG . "providers/{$tolowerprovider}.png" ?>" alt="<?php echo $tolowerprovider; ?>">
                             </li>
                         <?php endforeach; ?>
                     </ul>
