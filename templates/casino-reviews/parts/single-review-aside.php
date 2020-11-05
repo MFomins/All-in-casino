@@ -30,7 +30,7 @@
                 if ($deposit_methods) : ?>
                     <ul>
                         <?php foreach ($deposit_methods as $method) : ?>
-                            <?php $tolowerdeposit = $method; ?>
+                            <?php $tolowerdeposit = strtolower($method); ?>
                             <li><i class="icon-angle-double-right"></i><?php echo $method; ?><img src="<?php echo ALL_IN_CASINO_IMG . "payment-options/{$tolowerdeposit}.png" ?>" alt="<?php echo $tolowerdeposit; ?>-deposit"></li>
                         <?php endforeach; ?>
                     </ul>
