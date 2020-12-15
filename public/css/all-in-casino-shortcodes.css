@@ -233,24 +233,32 @@ i.icon-info {
 }
 
 .cta-wrap {
-    text-align: center;
-
+    text-align     : center;
+    height         : 100%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
 }
 
-.cta-wrap a {
+.cta-wrap .review {
     text-decoration: none;
+}
+
+.cta-wrap .review:hover {
+    text-decoration: underline;
 }
 
 .casino-reviews-4 .cta-wrap .play {
     color              : #fff;
     background-color   : #189e0c;
     text-transform     : uppercase;
-    padding            : 5px 0;
+    padding            : 7px 0;
     display            : flex;
     justify-content    : center;
     border-radius      : 5px;
     transition-duration: .5s;
     text-decoration    : none;
+    margin-top         : 15px;
 }
 
 .casino-reviews-4 .cta-wrap .play:hover {
@@ -259,21 +267,19 @@ i.icon-info {
     box-shadow      : 0 1px 8px 0 rgba(0, 0, 0, .4);
 }
 
-.cta-wrap .review {
-    position : absolute;
-    bottom   : 0;
-    left     : 50%;
-    transform: translate(-50%);
-    color    : #7f7f7f
-}
+
 
 @media (max-width:767px) {
+
     .cta-wrap .review {
-        position : absolute;
-        bottom   : 50px;
-        right    : -50px;
-        transform: none;
+        padding    : 0 !important;
+        padding-top: 10px!important;
     }
+
+    .cta-wrap {
+        padding: 10px;
+    }
+
 }
 
 .casino-reviews-4 .animated-button {
@@ -321,7 +327,7 @@ i.icon-info {
 
 @media (max-width:767px) {
     #main-tab {
-        grid-template-columns: auto;
+        grid-template-columns: auto!important;
     }
 
     .casino-reviews-1 {
