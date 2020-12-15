@@ -242,6 +242,9 @@ i.icon-info {
 
 .cta-wrap .review {
     text-decoration: none;
+    color:#7f7f7f;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 .cta-wrap .review:hover {
