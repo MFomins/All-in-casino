@@ -3,38 +3,38 @@
 =============================================*/
 
 .casino-slots-list {
-    display: grid;
+    display              : grid;
     grid-template-columns: repeat(4, 24.2%);
-    gap: 1rem;
-    margin: 2rem 0;
+    gap                  : 1rem;
+    margin               : 2rem 0;
 }
 
 .casino-slots-item {
     border-radius: .5rem;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    border: solid 1px #e0dfdf;
+    box-shadow   : 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border       : solid 1px #e0dfdf;
 }
 
 .casino-slots-image {
-    display: flex;
+    display        : flex;
     justify-content: center;
 }
 
 .casino-slots-image img {
-    height: 155px;
+    height       : 155px;
     border-radius: .5rem .5rem 0 0;
 }
 
 .casino-slots-name {
-    text-align: center;
-    font-weight: bold;
+    text-align    : center;
+    font-weight   : bold;
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size     : 1.6rem;
 }
 
 .casino-slots-publisher {
     text-align: center;
-    font-size: 1.2rem;
+    font-size : 1.2rem;
 }
 
 .casino-slots-slot-info {
@@ -42,10 +42,10 @@
 }
 
 .slot-info-field {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    padding: 1rem 0;
-    line-height: 1rem;
+    padding        : 1rem 0;
+    line-height    : 1rem;
 }
 
 .slot-info-field {
@@ -57,28 +57,28 @@
 }
 
 .slot-info-right {
-    font-size: 1.2rem;
+    font-size  : 1.2rem;
     font-weight: bold;
 }
 
 .casino-slots-button {
-    padding: 1rem 0 2rem;
-    display: flex;
+    padding        : 1rem 0 2rem;
+    display        : flex;
     justify-content: center;
 }
 
 .casino-slots-button a {
-    font-size: 1.4rem;
-    padding: .5rem 7rem;
+    font-size       : 1.4rem;
+    padding         : .5rem 7rem;
     background-color: #accd41;
-    border-radius: .5rem;
-    color: #fff!important;
+    border-radius   : .5rem;
+    color           : #fff !important;
 }
 
 @media (max-width:767px) {
     .casino-slots-list {
         grid-template-columns: auto;
-        row-gap: 3rem;
+        row-gap              : 3rem;
     }
 }
 
@@ -90,16 +90,24 @@
 =            Casino Reviews list 	          =
 =============================================*/
 
+.casino-reviews-item.single .casino-reviews-3 {
+    display: none;
+}
+
+.casino-reviews-item.single #main-tab {
+    grid-template-columns: 20% 50% 30%;
+}
+
 .casino-reviews-list:not(:first-child) {
     margin-top: 10px;
 }
 
 .casino-reviews-item {
-    position: relative;
+    position  : relative;
     background: #fff;
     box-shadow: 0 0 2.1rem rgba(0, 0, 0, .1);
-    border: solid 1px #e0dfdf;
-    margin: 0 auto;
+    border    : solid 1px #e0dfdf;
+    margin    : 0 auto;
 }
 
 .casino-reviews-item:not(:first-child) {
@@ -107,32 +115,32 @@
 }
 
 #main-tab {
-    display: grid;
+    display              : grid;
     grid-template-columns: 17% 30% 25% 28%;
-    grid-template-rows: 110px;
+    grid-template-rows   : 110px;
 }
 
 .tabs-box {
     position: absolute;
-    top: -1px;
-    right: -26px;
+    top     : -1px;
+    right   : -26px;
 }
 
 .tabs-box-item-wrap {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items   : flex-end;
 }
 
 .tabs-box-item-wrap>* {
     background: #fff;
-    border: solid 1px #e0dfdf;
-    cursor: pointer;
-    padding: 0 5px;
+    border    : solid 1px #e0dfdf;
+    cursor    : pointer;
+    padding   : 0 5px;
 }
 
 .main-tab-button {
-    display: none;
+    display   : none;
     margin-top: -1px;
 }
 
@@ -141,11 +149,11 @@ i.icon-info {
 }
 
 .casino-reviews-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
     justify-content: center;
-    background: #a4a4a4;
+    background     : #a4a4a4;
 }
 
 .casino-reviews-1 i {
@@ -153,96 +161,119 @@ i.icon-info {
 }
 
 .casino-reviews-1 img {
-    width: 120px;
-    height: 60px;
+    width     : 120px;
+    height    : 60px;
     object-fit: contain;
 }
 
 #main-tab .casino-reviews-1 a {
-    font-size: 12px;
-    color: #fff;
-    display: flex;
-    align-items: center;
+    font-size      : 12px;
+    color          : #fff;
+    display        : flex;
+    align-items    : center;
     text-decoration: none;
 }
 
 .casino-reviews-2 {
-    display: flex;
-    flex-direction: column;
-    justify-self: flex-start;
+    display        : flex;
+    flex-direction : column;
+    justify-self   : flex-start;
     justify-content: center;
-    padding:0 15px;
+    padding        : 0 15px;
 }
 
 .bonus-main-line {
     font-weight: bold;
-    font-size: 18px;
+    font-size  : 18px;
     line-height: 30px;
 }
 
 .bonus-main-line span {
-    color: #accd41;
+    color    : #accd41;
     font-size: 22px;
 }
 
 .bonus-second-line {
-    color: #7f7f7f;
+    color    : #7f7f7f;
     font-size: 15px;
 }
 
 .casino-reviews-2 img {
-    width: 40px;
-    height: 20px;
+    width     : 40px;
+    height    : 20px;
     object-fit: contain;
 }
 
 .casino-reviews-3 {
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
+    font-size      : 14px;
+    display        : flex;
+    flex-direction : column;
     justify-content: space-between;
-    padding: 10px 0;
+    padding        : 10px 0;
 }
 
 .casino-reviews-3 img {
-    width: 20px;
-    height: 15px;
+    width     : 20px;
+    height    : 15px;
     object-fit: contain;
 }
 
 .casino-reviews-3 .field-item {
-    display: flex;
+    display    : flex;
     align-items: center;
     line-height: 16px;
 }
 
 .casino-reviews-4 {
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
+    padding        : 0 10px;
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
+    position       : relative;
 }
 
 .cta-wrap {
     text-align: center;
+
 }
 
-.casino-reviews-4 .cta-wrap a {
-    color: #fff;
-    background-color: #189e0c;
-    text-transform: uppercase;
-    padding: 5px 0;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    transition-duration: .5s;
+.cta-wrap a {
     text-decoration: none;
 }
 
-.casino-reviews-4 .cta-wrap a:hover {
+.casino-reviews-4 .cta-wrap .play {
+    color              : #fff;
+    background-color   : #189e0c;
+    text-transform     : uppercase;
+    padding            : 5px 0;
+    display            : flex;
+    justify-content    : center;
+    border-radius      : 5px;
+    transition-duration: .5s;
+    text-decoration    : none;
+}
+
+.casino-reviews-4 .cta-wrap .play:hover {
     background-color: #0f5f08;
-    transform:scale(1.02);
-    box-shadow: 0 1px 8px 0 rgba(0,0,0,.4);
+    transform       : scale(1.02);
+    box-shadow      : 0 1px 8px 0 rgba(0, 0, 0, .4);
+}
+
+.cta-wrap .review {
+    position : absolute;
+    bottom   : 0;
+    left     : 50%;
+    transform: translate(-50%);
+    color    : #7f7f7f
+}
+
+@media (max-width:767px) {
+    .cta-wrap .review {
+        position : absolute;
+        bottom   : 50px;
+        right    : -50px;
+        transform: none;
+    }
 }
 
 .casino-reviews-4 .animated-button {
@@ -252,11 +283,11 @@ i.icon-info {
 /* Back to main tab button */
 
 .back-to-main-tab {
-    position: absolute;
-    right: 1rem;
-    top: .1rem;
+    position : absolute;
+    right    : 1rem;
+    top      : .1rem;
     font-size: 1.2rem;
-    cursor: pointer;
+    cursor   : pointer;
 }
 
 /* Payments tab */
@@ -270,46 +301,52 @@ i.icon-info {
 }
 
 .payments-info-header {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size     : 1.2rem;
+    font-weight   : bold;
     text-transform: uppercase;
 }
 
 .payment-cards img {
-    width: 4.5rem;
-    height: 3rem;
+    width     : 4.5rem;
+    height    : 3rem;
     object-fit: contain;
 }
 
 .casino-review-terms {
-    font-size: 7px;
-    color: #9f9f9f;
+    font-size  : 7px;
+    color      : #9f9f9f;
     line-height: 12px;
-    margin-top: 5px;
+    margin-top : 5px;
 }
 
 @media (max-width:767px) {
     #main-tab {
         grid-template-columns: auto;
     }
+
     .casino-reviews-1 {
-        margin: 0;
+        margin : 0;
         padding: 10px 0;
     }
+
     .casino-reviews-1 img {
-        width: 150px;
+        width : 150px;
         height: 75px;
     }
+
     .casino-reviews-1 i.icon-info {
         font-size: 16px;
     }
+
     .casino-reviews-3 {
         padding: 20px 10px;
     }
+
     .tabs-box {
-        top: -1px;
+        top  : -1px;
         right: -1px;
     }
+
     .casino-reviews-3 .field-item {
         font-size: 16px;
     }
@@ -321,39 +358,47 @@ i.icon-info {
     .casino-reviews-1 a {
         font-size: 16px;
     }
+
     .casino-reviews-2 {
         text-align: center;
-        margin: 0;
+        margin    : 0;
     }
+
     .bonus-main-line {
-        font-size: 24px;
+        font-size  : 24px;
         line-height: 30px;
     }
+
     .bonus-second-line {
         font-size: 16px;
     }
+
     .casino-reviews-2 {
-        padding: 10px 0;
+        padding     : 10px 0;
         justify-self: center;
     }
+
     .upper-right-get-bonus a {
         width: 100%;
     }
+
     .casino-reviews-4 .casino-review-terms {
-        width: 90%;
-        margin: 5px auto;
+        width     : 90%;
+        margin    : 5px auto;
         text-align: center;
-        font-size: 10px;
+        font-size : 10px;
     }
+
     #main-tab .casino-reviews-4 {
-        padding: 0;
+        padding   : 0;
         margin-top: 10px;
     }
+
     #main-tab .cta-wrap a {
-        padding: 15px 0;
-        font-size: 20px;
+        padding       : 15px 0;
+        font-size     : 20px;
         letter-spacing: 2px;
-        font-weight: bold;
+        font-weight   : bold;
         text-transform: uppercase;
     }
 }

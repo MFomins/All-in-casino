@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: All In Casino\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-07 12:14+0000\n"
-"PO-Revision-Date: 2020-10-07 12:37+0000\n"
-"Last-Translator: Kristaps Ritins\n"
-"Language-Team: Polski\n"
+"PO-Revision-Date: 2020-11-05 14:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: Polish\n"
 "Language: pl_PL\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
 "&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.4.3; wp-5.5.1"
+"X-Loco-Version: 2.4.4; wp-5.5.3"
 
 #: includes/class-all-in-casino-post-types.php:70
 #: includes/class-all-in-casino-post-types.php:118
@@ -234,7 +234,7 @@ msgstr ""
 #: includes/class-all-in-casino-post-types.php:67
 msgctxt "Post type singular name"
 msgid "Casino Review"
-msgstr ""
+msgstr "Recenzja"
 
 #: includes/class-all-in-casino-post-types.php:115
 msgctxt "Post type singular name"

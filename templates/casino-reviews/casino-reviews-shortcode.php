@@ -1,4 +1,4 @@
-<div class="casino-reviews-item" <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"';
+<div class="casino-reviews-item <?php if($atts['single']) echo 'single'; ?>" <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"';
                                     endif; ?>>
     <span class="position" <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="position"';
                             endif; ?> style="display: none;"><?php echo $num; ?></span>

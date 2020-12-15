@@ -2,9 +2,6 @@
     <?php if (has_post_thumbnail()) : ?>
         <a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow"><?php the_post_thumbnail(); ?></a>
     <?php endif; ?>
-    <a href="<?php echo get_permalink(); ?>" <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="url"';
-                                                endif; ?>><span <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="name"';
-                                                                endif; ?>><?php the_title(); ?></span> <i class="icon-right"></i></a>
 </div>
 <div class="casino-reviews-2">
     <div class="bonus-main-line"><?php echo get_field('review_bonus_text_first_line'); ?></div>
@@ -30,9 +27,12 @@
 </div>
 <div class="casino-reviews-4">
     <div class="cta-wrap">
-        <a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow">
+        <a class="play" href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow">
             <?php echo __('Play', 'all-in-casino'); ?>
         </a>
+        <a class="review" href="<?php echo get_permalink(); ?>" <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="url"';
+                                                    endif; ?>><span <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="name"';
+                                                                endif; ?>><?php _e('Review', 'all-in-casino'); ?></span></a>
     </div>
     <?php if (get_field('review_enable_tnc') == true) : ?>
         <div class="casino-review-terms">

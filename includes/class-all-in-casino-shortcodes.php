@@ -131,6 +131,7 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
                     'reviews' => '',
                     'limit' => get_option('posts_per_page'),
                     'itemlist' => '',
+                    'single' => '',
                 ),
                 $atts,
                 'casino_reviews_list'
