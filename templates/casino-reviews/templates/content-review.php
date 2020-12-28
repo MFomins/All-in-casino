@@ -160,7 +160,7 @@
             </div>
             <div class="single-ca-info">
                 <span class="ca-info"><?php the_field('review_bonus_text_first_line'); ?></span>
-                <a href="#" class="ca-button"><?php _e('Get Bonus', 'all-in-casino'); ?></a>
+                <a href="<?php the_field('review_redirect'); ?>" class="ca-button"><?php _e('Get Bonus', 'all-in-casino'); ?></a>
             </div>
         </div>
     </div>
