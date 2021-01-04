@@ -244,6 +244,45 @@ table {
     text-align: center;
 }
 
+/* Casino review content table styles */
+.single-casino-main table {
+    width          : 100% !important;
+    border-collapse: collapse !important;
+}
+
+.single-casino-main table td {
+    padding: 5px !important;
+}
+
+.single-casino-main table thead tr:first-child {
+    background-color: #898989 !important;
+    color           : #fff !important;
+}
+
+.single-casino-main table tr:nth-child(2n) {
+    background-color: rgba(0, 0, 0, 0.025) !important;
+}
+
+.single-casino-main table tr th {
+    text-align: left !important;
+    padding   : 5px !important;
+}
+
+@media (max-width:767px) {
+    .single-casino-main table td {
+        display   : block !important;
+        width     : 100% !important;
+        text-align: center;
+    }
+
+    .single-casino-main table tr th {
+        display   : block !important;
+        text-align: center !important;
+    }
+}
+
+/* END Casino review content table styles */
+
 /* Casino review aside */
 
 .single-casino-aside {
@@ -264,7 +303,7 @@ table {
 }
 
 .single-casino-aside .aside-providers img {
-    width       : 80px;
+    width: 80px;
 }
 
 .single-casino-aside .aside-item ul li {
