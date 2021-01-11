@@ -32,6 +32,10 @@
     font-size     : 1.6rem;
 }
 
+.casino-slots-name a {
+    color: #000;
+}
+
 .casino-slots-publisher {
     text-align: center;
     font-size : 1.2rem;
@@ -241,10 +245,10 @@ i.icon-info {
 }
 
 .cta-wrap .review {
-    text-decoration: none;
-    color:#7f7f7f;
-    font-size: 14px;
-    margin-top: 5px;
+    text-decoration : none;
+    color           : #7f7f7f;
+    font-size       : 14px;
+    margin-top      : 5px;
     background-color: none;
 }
 
@@ -275,7 +279,7 @@ i.icon-info {
 
     .cta-wrap .review {
         padding    : 0 !important;
-        padding-top: 10px!important;
+        padding-top: 10px !important;
     }
 
     .cta-wrap {
@@ -329,7 +333,7 @@ i.icon-info {
 
 @media (max-width:767px) {
     #main-tab {
-        grid-template-columns: auto!important;
+        grid-template-columns: auto !important;
     }
 
     .casino-reviews-1 {
