@@ -10,7 +10,7 @@
  * @wordpress-plugin
  * Plugin Name:       All In Casino
  * Plugin URI:        yoursite.lv
- * Description:       All In Casino plugin
+ * Description:       All In Casino Plugin
  * Version:           1.0.0
  * Author:            KR
  * Author URI:        yoursite.lv
