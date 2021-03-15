@@ -106,7 +106,6 @@ $background_col = get_field('review_page_background_color', 'options')
                         </div>
                     </div>
                     <!-- End mobile pluses/minuses -->
-
                     <div class="upper-right-get-bonus"><a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow"><?php _e('Get Bonus', 'all-in-casino'); ?> <i class="icon-angle-double-right"></i></a></div>
                     <div class="upper-right-terms">
                         <?php

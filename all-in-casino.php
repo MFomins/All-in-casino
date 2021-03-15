@@ -21,7 +21,7 @@
  */
 
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
+if (!defined('WPINC')) {
 	die;
 }
 
@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'ALL_IN_CASINO_VERSION', '1.0.61' );
+define('ALL_IN_CASINO_VERSION', '1.0.61');
 
 define('ALL_IN_CASINO_NAME', 'all-in-casino');
 
@@ -47,8 +47,9 @@ define('ALL_IN_CASINO_IMG', plugin_dir_url(__FILE__) . "public/img/");
  * The code that runs during plugin activation.
  * This action is documented in includes/class-all-in-casino-activator.php
  */
-function activate_all_in_casino() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-all-in-casino-activator.php';
+function activate_all_in_casino()
+{
+	require_once plugin_dir_path(__FILE__) . 'includes/class-all-in-casino-activator.php';
 	All_In_Casino_Activator::activate();
 }
 
@@ -56,19 +57,20 @@ function activate_all_in_casino() {
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-all-in-casino-deactivator.php
  */
-function deactivate_all_in_casino() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-all-in-casino-deactivator.php';
+function deactivate_all_in_casino()
+{
+	require_once plugin_dir_path(__FILE__) . 'includes/class-all-in-casino-deactivator.php';
 	All_In_Casino_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_all_in_casino' );
-register_deactivation_hook( __FILE__, 'deactivate_all_in_casino' );
+register_activation_hook(__FILE__, 'activate_all_in_casino');
+register_deactivation_hook(__FILE__, 'deactivate_all_in_casino');
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-all-in-casino.php';
+require plugin_dir_path(__FILE__) . 'includes/class-all-in-casino.php';
 
 /**
  * Begins execution of the plugin.
@@ -79,10 +81,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-all-in-casino.php';
  *
  * @since    1.0.0
  */
-function run_all_in_casino() {
+function run_all_in_casino()
+{
 
 	$plugin = new All_In_Casino();
 	$plugin->run();
-
 }
 run_all_in_casino();

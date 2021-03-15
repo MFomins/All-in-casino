@@ -27,9 +27,11 @@
 </div>
 <div class="casino-reviews-4">
     <div class="cta-wrap">
-        <a class="play" href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow">
-            <?php echo __('Play', 'all-in-casino'); ?>
-        </a>
+        <?php if (get_field('sportsbook_affiliate_redirect')) : ?>
+            <a class="play" href="<?php the_field('sportsbook_affiliate_redirect'); ?>" target="_blank" rel="nofollow">
+                <?php echo __('Play', 'all-in-casino'); ?>
+            </a>
+        <?php endif; ?>
         <a class="review" href="<?php echo get_permalink(); ?>" <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="url"';
                                                                 endif; ?>><span <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="name"';
                                                                                 endif; ?>><?php _e('Review »', 'all-in-casino'); ?></span></a>
