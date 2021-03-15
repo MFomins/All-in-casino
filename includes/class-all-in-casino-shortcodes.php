@@ -81,7 +81,7 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
 
             $loop_args = array(
                 'post_type' => 'casino-slot',
-                'posts_per_page' => $atts['limit'],
+                'posts_per_page' => -1,
                 'paged' => $paged,
             );
 
