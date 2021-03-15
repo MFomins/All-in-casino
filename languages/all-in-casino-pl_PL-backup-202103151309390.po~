@@ -5,10 +5,10 @@ msgstr ""
 "POT-Creation-Date: 2021-03-15 13:08+0000\n"
 "PO-Revision-Date: 2021-03-15 13:09+0000\n"
 "Last-Translator: \n"
-"Language-Team: Latvian\n"
-"Language: lv\n"
-"Plural-Forms: nplurals=3; plural=n % 10 == 1 && n % 100 != 11 ? 0 : n != 0 ? "
-"1 : 2;\n"
+"Language-Team: Polish\n"
+"Language: pl_PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: includes/class-all-in-casino-post-types.php:67
 msgctxt "Post type singular name"
 msgid "Casino Review"
-msgstr ""
+msgstr "Recenzja"
 
 #: includes/class-all-in-casino-post-types.php:68
 msgctxt "Admin Menu text"
@@ -261,81 +261,92 @@ msgstr ""
 #: templates/casino-slots/casino-slots-shortcode.php:21
 #: templates/casino-slots/templates/content-slot.php:22
 msgid "Bet per Spin"
-msgstr "Maksa par griezienu"
+msgstr ""
+"Postaw na obrót\n"
 
 #: templates/casino-slots/casino-slots-shortcode.php:25
 #: templates/casino-slots/templates/content-slot.php:27
 msgid "Paylines"
-msgstr "Maksas līnijas"
+msgstr ""
+"Linie wygrywające\n"
 
 #: templates/casino-slots/casino-slots-shortcode.php:30
 #: templates/casino-slots/widgets/casino-slot-widget.php:12
 msgid "Review"
-msgstr "Apskats"
+msgstr "Recenzja"
 
 #: templates/casino-reviews/parts/reviews-main-tab.php:28
 #: templates/casino-reviews/parts/sportsbook-main-tab.php:31
 msgid "Play"
-msgstr "Spēlēt"
+msgstr "Grać"
 
 #: templates/casino-reviews/parts/reviews-main-tab.php:32
 #: templates/casino-reviews/parts/sportsbook-main-tab.php:35
 msgid "Review »"
-msgstr "Apskats »"
+msgstr ""
 
 #: templates/casino-reviews/parts/single-review-aside.php:3
 msgid "Information"
-msgstr "Informācija"
+msgstr "Informacja"
 
 #: templates/casino-reviews/parts/single-review-aside.php:25
 msgid "Deposit Methods"
-msgstr "Iemaksas metodes"
+msgstr ""
+"Metody wpłaty\n"
 
 #: templates/casino-reviews/parts/single-review-aside.php:43
 msgid "Withdraw Methods"
-msgstr "Izmaksas metodes"
+msgstr ""
+"Metody wypłaty\n"
 
 #: templates/casino-reviews/parts/single-review-aside.php:63
 msgid "Providers"
-msgstr "Programmatūra"
+msgstr "Dostawcy"
 
 #: templates/casino-reviews/parts/single-review-aside.php:87
 msgid "Customer Support"
-msgstr "Klientu atbalsts"
+msgstr ""
+"Obsługa klienta\n"
 
 #: templates/casino-reviews/templates/content-review.php:16
 msgid "Updated: "
-msgstr "Atjaunināts: "
+msgstr "Zaktualizowano: "
 
 #: templates/casino-reviews/templates/content-review.php:31
 msgid "Rating"
-msgstr "Vērtējums"
+msgstr "Ocena"
 
 #: templates/casino-reviews/templates/content-review.php:42
 msgid "Withdrawal time"
-msgstr "Izmaksas laiks"
+msgstr ""
+"Czas karencji\n"
 
 #: templates/casino-reviews/templates/content-review.php:46
 msgid "Welcome bonus"
-msgstr "Iepazīšanās bonuss"
+msgstr ""
+"Bonus powitalny\n"
 
 #: templates/casino-reviews/templates/content-review.php:57
 msgid "Play Here!"
-msgstr "Spēlēt šeit!"
+msgstr ""
+"Graj tutaj!\n"
 
 #: templates/casino-reviews/templates/content-review.php:110
 #: templates/casino-reviews/templates/content-review.php:175
 #: templates/casino-reviews/widgets/casino-review-widget.php:17
 msgid "Get Bonus"
-msgstr "Iegūt bonusu"
+msgstr ""
+"Zdobądź bonus\n"
 
 #: templates/casino-slots/templates/content-slot.php:9
 msgid "Play for real money"
-msgstr "Spēlēt uz īstu naudu"
+msgstr ""
+"Graj na prawdziwe pieniądze\n"
 
 #: templates/casino-slots/templates/content-slot.php:10
 msgid "Play for play money"
-msgstr "Spēlēt uz spēļu naudu"
+msgstr ""
+"Graj na wirtualne pieniądze\n"
 
 #. Name of the plugin
 msgid "All In Casino"

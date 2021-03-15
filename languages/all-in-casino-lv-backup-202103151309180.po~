@@ -281,7 +281,7 @@ msgstr "Spēlēt"
 #: templates/casino-reviews/parts/reviews-main-tab.php:32
 #: templates/casino-reviews/parts/sportsbook-main-tab.php:35
 msgid "Review »"
-msgstr "Apskats »"
+msgstr ""
 
 #: templates/casino-reviews/parts/single-review-aside.php:3
 msgid "Information"
