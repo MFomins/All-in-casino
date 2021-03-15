@@ -8,7 +8,7 @@ $background_col = get_field('review_page_background_color', 'options')
 
 <div class="single-casino-review">
     <div class="single-casino-upper" <?php if ($background_col) echo "style='background-color:{$background_col};'" ?>>
-        <div class="single-casino-bg-img" <?php if ($background_img) echo "style='background-image:url({$background_img});background-size:cover;'" ?>>
+        <div class="single-casino-bg-img" <?php if ($background_img) echo "style='background-image:url({$background_img});'" ?>>
             <div class="aic-container">
                 <div id="breadcrumbs">
                     <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
