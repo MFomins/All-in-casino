@@ -107,11 +107,11 @@
 }
 
 .casino-reviews-item {
-    position  : relative;
-    background: #fff;
-    box-shadow: 0 0 2.1rem rgba(0, 0, 0, .1);
-    border    : solid 1px #e0dfdf;
-    margin    : 0 auto;
+    position     : relative;
+    background   : #fff;
+    box-shadow   : 0 0 2.1rem rgba(0, 0, 0, .1);
+    margin       : 0 auto;
+    margin-bottom: 15px;
 }
 
 .casino-reviews-item:not(:first-child) {
@@ -124,35 +124,8 @@
     grid-template-rows   : 110px;
 }
 
-.tabs-box {
-    position: absolute;
-    top     : -1px;
-    right   : -26px;
-}
-
-.tabs-box-item-wrap {
-    display       : flex;
-    flex-direction: column;
-    align-items   : flex-end;
-}
-
-.tabs-box-item-wrap>* {
-    background: #fff;
-    border    : solid 1px #e0dfdf;
-    cursor    : pointer;
-    padding   : 0 5px;
-}
-
-.main-tab-button {
-    display   : none;
-    margin-top: -1px;
-}
-
-i.icon-info {
-    font-size: 10px;
-}
-
 .casino-reviews-1 {
+    position       : relative;
     display        : flex;
     flex-direction : column;
     align-items    : center;
@@ -275,19 +248,6 @@ i.icon-info {
     box-shadow      : 0 1px 8px 0 rgba(0, 0, 0, .4);
 }
 
-@media (max-width:767px) {
-
-    .cta-wrap .review {
-        padding    : 0 !important;
-        padding-top: 10px !important;
-    }
-
-    .cta-wrap {
-        padding: 10px;
-    }
-
-}
-
 .casino-reviews-4 .animated-button {
     color: #fff;
 }
@@ -332,6 +292,10 @@ i.icon-info {
 }
 
 @media (max-width:767px) {
+    .casino-reviews-item {
+        margin-bottom: 30px;
+    }
+
     #main-tab {
         grid-template-columns: auto !important;
     }
@@ -403,16 +367,63 @@ i.icon-info {
 
     #main-tab .casino-reviews-4 {
         padding   : 0;
-        margin-top: 10px;
     }
 
-    #main-tab .cta-wrap a {
-        padding       : 15px 0;
-        font-size     : 20px;
-        letter-spacing: 2px;
-        font-weight   : bold;
-        text-transform: uppercase;
+    #main-tab .cta-wrap .play {
+        margin-top   : 0;
+        border-radius: 0;
+        padding      : 10px 0;
     }
+
+    #main-tab .cta-wrap .review {
+        order         : -1;
+        font-size     : 16px;
+        text-transform: capitalize;
+        letter-spacing: 0;
+        margin        : 0 0 5px;
+    }
+}
+
+/* Ribbon CSS */
+.ribbon {
+    position     : absolute;
+    top          : -10px;
+    left         : 9px;
+    padding      : 0 0.5em;
+    font-size    : 12px;
+    margin       : 0 0 0 -0.625em;
+    line-height  : 1.875em;
+    color        : #fff;
+    border-radius: 0 0.156em 0.156em 0;
+    background   : rgb(123, 159, 199);
+    box-shadow   : -1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.ribbon:before,
+.ribbon:after {
+    position: absolute;
+    content : '';
+    display : block;
+}
+
+.ribbon:before {
+    width        : 0.469em;
+    height       : 123%;
+    padding      : 0 0 0.438em;
+    top          : 0;
+    left         : -0.469em;
+    background   : inherit;
+    border-radius: 0.313em 0 0 0.313em;
+}
+
+.ribbon:after {
+    width        : 0.313em;
+    height       : 0.313em;
+    background   : rgba(0, 0, 0, 0.35);
+    bottom       : -0.313em;
+    left         : -0.313em;
+    border-radius: 0.313em 0 0 0.313em;
+    box-shadow   : inset -1px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 /*=============================================

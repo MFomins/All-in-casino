@@ -128,10 +128,11 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
         {
             $atts = shortcode_atts(
                 array(
-                    'reviews' => '',
-                    'limit' => get_option('posts_per_page'),
+                    'reviews' => '', //Slugs of casinos you need to display
+                    'limit' => -1,
                     'itemlist' => '',
-                    'single' => '',
+                    'single' => '', //Show shortcode without selling points
+                    'type' => '',
                 ),
                 $atts,
                 'casino_reviews_list'
@@ -163,7 +164,7 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
                 while ($loop->have_posts()) :
                     $num++;
                     $loop->the_post();
-
+                    
                     include ALL_IN_CASINO_BASE_DIR . 'templates/casino-reviews/casino-reviews-shortcode.php';
 
                 endwhile;
