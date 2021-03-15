@@ -15,12 +15,6 @@ if (function_exists('acf_add_options_page')) {
         'icon_url'      => 'dashicons-edit-large',
         'redirect'      => false
     ));
-
-    acf_add_options_sub_page(array(
-        'page_title'     => 'Featured Casino',
-        'menu_title'    => 'Featured Casino',
-        'parent_slug'    => 'aic-general-settings',
-    ));
 }
 // OPTIONS PAGES END
 
@@ -311,6 +305,25 @@ if (function_exists('acf_add_local_field_group')) :
                 'endpoint' => 0,
             ),
             array(
+                'key' => 'field_604f5f4a4c80c',
+                'label' => 'Affiliate Redirect',
+                'name' => 'sportsbook_affiliate_redirect',
+                'type' => 'text',
+                'instructions' => 'For example /go/casino',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ),
+            array(
                 'key' => 'field_604f2e3190b36',
                 'label' => 'Sportsbook bonus first line',
                 'name' => 'sportsbook_bonus_text_first_line',
@@ -393,7 +406,7 @@ if (function_exists('acf_add_local_field_group')) :
                 'label' => 'Sportsbook ribbon',
                 'name' => 'sportsbook_ribbon',
                 'type' => 'text',
-                'instructions' => 'Bonus text second line. Will be smaller. For example + 300 Free Spins',
+                'instructions' => 'Ribbon for toplist',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
@@ -1073,203 +1086,6 @@ if (function_exists('acf_add_local_field_group')) :
     ));
 
     acf_add_local_field_group(array(
-        'key' => 'group_5f0228af1171e',
-        'title' => 'AIC Featured Casino',
-        'fields' => array(
-            array(
-                'key' => 'field_5f212ff51c314',
-                'label' => 'Enable Featured Casino',
-                'name' => 'fc_enable',
-                'type' => 'true_false',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'message' => '',
-                'default_value' => 0,
-                'ui' => 1,
-                'ui_on_text' => 'Enable',
-                'ui_off_text' => 'Disable',
-            ),
-            array(
-                'key' => 'field_5f2135cb95421',
-                'label' => 'Redirect',
-                'name' => '',
-                'type' => 'tab',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => array(
-                    array(
-                        array(
-                            'field' => 'field_5f212ff51c314',
-                            'operator' => '==',
-                            'value' => '1',
-                        ),
-                    ),
-                ),
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'placement' => 'top',
-                'endpoint' => 0,
-            ),
-            array(
-                'key' => 'field_5f21359fca751',
-                'label' => 'Redirect',
-                'name' => 'fc_redirect',
-                'type' => 'text',
-                'instructions' => 'Enter redirect link. For example /go/casino',
-                'required' => 1,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-            ),
-            array(
-                'key' => 'field_5f0228d5b1e58',
-                'label' => 'Image',
-                'name' => '',
-                'type' => 'tab',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => array(
-                    array(
-                        array(
-                            'field' => 'field_5f212ff51c314',
-                            'operator' => '==',
-                            'value' => '1',
-                        ),
-                    ),
-                ),
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'placement' => 'top',
-                'endpoint' => 0,
-            ),
-            array(
-                'key' => 'field_5f0228b5b1e57',
-                'label' => 'Featured casino image',
-                'name' => 'fc_casino_image',
-                'type' => 'image',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'return_format' => 'array',
-                'preview_size' => 'thumbnail',
-                'library' => 'all',
-                'min_width' => '',
-                'min_height' => '',
-                'min_size' => '',
-                'max_width' => '',
-                'max_height' => '',
-                'max_size' => '',
-                'mime_types' => '',
-            ),
-            array(
-                'key' => 'field_5f02d1254e93b',
-                'label' => 'Description',
-                'name' => '',
-                'type' => 'tab',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => array(
-                    array(
-                        array(
-                            'field' => 'field_5f212ff51c314',
-                            'operator' => '==',
-                            'value' => '1',
-                        ),
-                    ),
-                ),
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'placement' => 'top',
-                'endpoint' => 0,
-            ),
-            array(
-                'key' => 'field_5f02d1394e93c',
-                'label' => 'Main text',
-                'name' => 'fc_main_text',
-                'type' => 'text',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-            ),
-            array(
-                'key' => 'field_5f02d1534e93d',
-                'label' => 'Sub text',
-                'name' => 'fc_sub_text',
-                'type' => 'text',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-            ),
-        ),
-        'location' => array(
-            array(
-                array(
-                    'param' => 'options_page',
-                    'operator' => '==',
-                    'value' => 'acf-options-featured-casino',
-                ),
-            ),
-        ),
-        'menu_order' => 0,
-        'position' => 'normal',
-        'style' => 'default',
-        'label_placement' => 'top',
-        'instruction_placement' => 'label',
-        'hide_on_screen' => '',
-        'active' => true,
-        'description' => '',
-        'modified' => false,
-    ));
-
-    acf_add_local_field_group(array(
         'key' => 'group_5f215b10d2c61',
         'title' => 'AIC Plugin Settings',
         'fields' => array(
@@ -1288,25 +1104,6 @@ if (function_exists('acf_add_local_field_group')) :
                 ),
                 'placement' => 'left',
                 'endpoint' => 0,
-            ),
-            array(
-                'key' => 'field_5f7859d96a16f',
-                'label' => 'Disable Review Navigation',
-                'name' => 'disable_reviews_navigation',
-                'type' => 'true_false',
-                'instructions' => 'Disable review navigation in review pages.',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'message' => '',
-                'default_value' => 0,
-                'ui' => 1,
-                'ui_on_text' => 'Disabled',
-                'ui_off_text' => 'Enabled',
             ),
             array(
                 'key' => 'field_5f215b1a7f073',
@@ -1459,7 +1256,7 @@ if (function_exists('acf_add_local_field_group')) :
             array(
                 'key' => 'field_5fa3f3f57d06b',
                 'label' => 'Enable archive page',
-                'name' => 'enable_archive',
+                'name' => 'enable_review_archive',
                 'type' => 'true_false',
                 'instructions' => '',
                 'required' => 0,
@@ -1474,6 +1271,33 @@ if (function_exists('acf_add_local_field_group')) :
                 'ui' => 1,
                 'ui_on_text' => 'Enabled',
                 'ui_off_text' => 'Disabled',
+            ),
+            array(
+                'key' => 'field_604f6736cb62a',
+                'label' => 'Archive Page Slug',
+                'name' => 'review_archive_slug',
+                'type' => 'text',
+                'instructions' => 'Slug of the casino review archive page. Remember to refresh/flush permalinks at <strong>Settings -> Permalinks -> Save Changes</strong>',
+                'required' => 0,
+                'conditional_logic' => array(
+                    array(
+                        array(
+                            'field' => 'field_5fa3f3f57d06b',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                ),
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
             ),
             array(
                 'key' => 'field_5fa3f75397697',
@@ -1531,7 +1355,7 @@ if (function_exists('acf_add_local_field_group')) :
             ),
             array(
                 'key' => 'field_604f41247e7ad',
-                'label' => 'Casino Review Header',
+                'label' => 'Casino Review Page',
                 'name' => '',
                 'type' => 'tab',
                 'instructions' => '',
@@ -1544,6 +1368,25 @@ if (function_exists('acf_add_local_field_group')) :
                 ),
                 'placement' => 'top',
                 'endpoint' => 0,
+            ),
+            array(
+                'key' => 'field_5f7859d96a16f',
+                'label' => 'Disable Review Navigation',
+                'name' => 'disable_reviews_navigation',
+                'type' => 'true_false',
+                'instructions' => 'Disable review navigation in review pages.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'message' => '',
+                'default_value' => 0,
+                'ui' => 1,
+                'ui_on_text' => 'Disabled',
+                'ui_off_text' => 'Enabled',
             ),
             array(
                 'key' => 'field_604f41e17e7ae',
