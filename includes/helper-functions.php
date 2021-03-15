@@ -10,60 +10,6 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-
-//Function that adds FEATURED CASINO 
-function fc_add_content($content)
-{
-    $redirect = get_field('fc_redirect', 'options');
-    $main_text = get_field('fc_main_text', 'options');
-    $sub_text = get_field('fc_sub_text', 'options');
-    $image = get_field('fc_casino_image', 'options');
-
-    $content_output = '<div class="fc-sticky-bottom">';
-
-    $content_output .= '<div class="fc-content-wrapper aic-container"><div class="fc-close-btn"><i class="icon-cancel"></i></div>';
-
-    $content_output .= '<div class="fc-content-left">';
-
-    $content_output .= '<div class="fc-content-img-wrap">';
-
-    $content_output .= '<img class="fc-content-img" src="' . $image['url'] . '" alt="' . $image['alt'] . '">';
-
-    $content_output .= '</div>';
-
-    $content_output .= '<div class="fc-content-text-wrap">';
-
-    $content_output .= '<div class="fc-content-heading">';
-
-    $content_output .= "{$main_text}";
-
-    $content_output .= '</div>';
-
-    $content_output .= '<div class="fc-content-info">';
-
-    $content_output .= "{$sub_text}";
-
-    $content_output .= '</div>';
-
-    $content_output .= '</div>';
-
-    $content_output .= '</div>';
-
-    $content_output .= '<div class="fc-content-cta"><a href="' . $redirect . '" class="animated-button"><span></span><span></span><span></span><span></span>' . __('Register', 'all-in-casino') . '</a></div>';
-
-    $content_output .= '</div></div>';
-
-    if (!is_singular('casino-review') && get_field('fc_enable', 'options') == true) {
-        return $content . $content_output;
-    } else {
-        return $content;
-    }
-}
-
-//Featured casino filter
-add_filter('the_content', 'fc_add_content');
-
-
 //Function that adds casino reviews schema
 function add_review_list_schema()
 {
@@ -99,11 +45,9 @@ add_action('wp_head', 'add_review_list_schema');
 //Changes the slug of the casino reiviews post type
 function aic_register_post_type_args($args, $post_type)
 {
-
     if ('casino-review' === $post_type && get_field('aic_review_slug', 'options')) {
         $args['rewrite']['slug'] = get_field('aic_review_slug', 'options');
     }
-
     return $args;
 }
 
@@ -112,11 +56,21 @@ add_filter('register_post_type_args', 'aic_register_post_type_args', 10, 2);
 //Add archive page option 
 function aic_change_archive($args, $post_type)
 {
-
-    if ('casino-review' === $post_type && get_field('enable_archive', 'options')) {
+    if ('casino-review' === $post_type && get_field('enable_review_archive', 'options')) {
         $args['has_archive'] = true;
+    } else {
+        $args['has_archive'] = false;
     }
-
     return $args;
 }
 add_filter('register_post_type_args', 'aic_change_archive', 10, 2);
+
+//Changes the slug of the casino review custom post type archive page
+function aic_change_casino_archive_slug($args, $post_type)
+{
+    if ('casino-review' === $post_type && get_field('review_archive_slug', 'options')) {
+        $args['has_archive'] = get_field('review_archive_slug', 'options');
+    }
+    return $args;
+}
+add_filter('register_post_type_args', 'aic_change_casino_archive_slug', 10, 2);

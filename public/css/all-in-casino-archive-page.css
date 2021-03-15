@@ -1,0 +1,16 @@
+.casino-review-archive {
+    margin: 30px 0;
+}
+
+.casino-review-archive-wrap {
+    width           : 1200px;
+    max-width       : 100%;
+    margin          : 0 auto;
+    padding         : 20px;
+    background-color: #fff;
+    border          : 1px #eaeaea solid;
+}
+
+.casino-review-archive #breadcrumbs a, .casino-review-archive #breadcrumbs span{
+    color:#333;
+}

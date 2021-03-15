@@ -98,7 +98,7 @@ class All_In_Casino_Post_Types
             'query_var'          => true,
             'rewrite'            => array('slug' => 'review'),
             'capability_type'    => 'post',
-            'has_archive'        => true,
+            'has_archive'        => false,
             'hierarchical'       => false,
             'menu_position'      => null,
             'menu_icon'          => 'dashicons-text-page',

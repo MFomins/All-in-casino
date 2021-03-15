@@ -64,10 +64,6 @@ class All_In_Casino_Public
 	{
 		wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/all-in-casino-public.css', array(), $this->version, 'all');
 
-		wp_enqueue_style($this->plugin_name . '-fontello', plugin_dir_url(__FILE__) . '../vendor/fontello/css/fontello-embedded.css', array(), $this->version, 'all');
-
-		wp_enqueue_style($this->plugin_name . '-featured-casino', plugin_dir_url(__FILE__) . 'css/all-in-casino-featured-casino.css', array(), $this->version, 'all');
-
 		wp_enqueue_style($this->plugin_name . '-widgets', plugin_dir_url(__FILE__) . 'css/all-in-casino-widgets.css', array(), $this->version, 'all');
 
 		if (is_singular('casino-slot')) {
@@ -77,6 +73,12 @@ class All_In_Casino_Public
 		if (is_singular('casino-review')) {
 			wp_enqueue_style($this->plugin_name . '-single-casino-review', plugin_dir_url(__FILE__) . 'css/all-in-casino-casino-review.css', array(), $this->version, 'all');
 		}
+
+		if (is_post_type_archive('casino-review')) {
+			wp_enqueue_style($this->plugin_name . '-archive-page', plugin_dir_url(__FILE__) . 'css/all-in-casino-archive-page.css', array(), $this->version, 'all');
+		}
+
+		// wp_enqueue_style($this->plugin_name . '-featured-casino', plugin_dir_url(__FILE__) . 'css/all-in-casino-featured-casino.css', array(), $this->version, 'all');
 
 		// if (is_active_widget(false, false, 'casino_slot', true)) {
 		// 	wp_enqueue_style($this->plugin_name . '-widgets');
@@ -92,5 +94,4 @@ class All_In_Casino_Public
 	{
 		wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/all-in-casino-public.js', array('jquery'), $this->version, false);
 	}
-
 }
