@@ -83,7 +83,7 @@ $background_col = get_field('review_page_background_color', 'options')
                                     // Load sub field value.
                                     $sub_value = get_sub_field('review_item_field');
                                     // Do something...
-                                    echo '<div class="field-item"><i class="icon-plus-squared"></i>' . $sub_value . '</div>';
+                                    echo '<div class="field-item"><span class="plus">+</span>' . $sub_value . '</div>';
                                 // End loop.
                                 endwhile;
                             endif;
@@ -98,7 +98,7 @@ $background_col = get_field('review_page_background_color', 'options')
                                     // Load sub field value.
                                     $sub_value = get_sub_field('review_minus_item_field');
                                     // Do something...
-                                    echo '<div class="field-item"><i class="icon-minus-squared"></i>' . $sub_value . '</div>';
+                                    echo '<div class="field-item"><span class="minus">&#8722;</span>' . $sub_value . '</div>';
                                 // End loop.
                                 endwhile;
                             endif;
@@ -106,7 +106,7 @@ $background_col = get_field('review_page_background_color', 'options')
                         </div>
                     </div>
                     <!-- End mobile pluses/minuses -->
-                    <div class="upper-right-get-bonus"><a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow"><?php _e('Get Bonus', 'all-in-casino'); ?> <i class="icon-angle-double-right"></i></a></div>
+                    <div class="upper-right-get-bonus"><a href="<?php the_field('review_redirect'); ?>" target="_blank" rel="nofollow"><?php _e('Get Bonus', 'all-in-casino'); ?> »</a></div>
                     <div class="upper-right-terms">
                         <?php
                         if (get_field('review_terms')) the_field('review_terms');
@@ -122,7 +122,7 @@ $background_col = get_field('review_page_background_color', 'options')
                                     // Load sub field value.
                                     $sub_value = get_sub_field('review_item_field');
                                     // Do something...
-                                    echo '<div class="field-item"><i class="icon-plus-squared"></i>' . $sub_value . '</div>';
+                                    echo '<div class="field-item"><span class="plus">+</span>' . $sub_value . '</div>';
                                 // End loop.
                                 endwhile;
                             endif;
@@ -137,7 +137,7 @@ $background_col = get_field('review_page_background_color', 'options')
                                     // Load sub field value.
                                     $sub_value = get_sub_field('review_minus_item_field');
                                     // Do something...
-                                    echo '<div class="field-item"><i class="icon-minus-squared"></i>' . $sub_value . '</div>';
+                                    echo '<div class="field-item"><span class="minus">&#8722;</span>' . $sub_value . '</div>';
                                 // End loop.
                                 endwhile;
                             endif;

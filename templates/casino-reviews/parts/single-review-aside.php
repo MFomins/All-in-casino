@@ -31,7 +31,7 @@
                     <ul>
                         <?php foreach ($deposit_methods as $method) : ?>
                             <?php $tolowerdeposit = strtolower($method); ?>
-                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?><img src="<?php echo ALL_IN_CASINO_IMG . "payment-options/{$tolowerdeposit}.png" ?>" alt="<?php echo $tolowerdeposit; ?>-deposit"></li>
+                            <li>» <?php echo $method; ?><img src="<?php echo ALL_IN_CASINO_IMG . "payment-options/{$tolowerdeposit}.png" ?>" alt="<?php echo $tolowerdeposit; ?>-deposit"></li>
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
@@ -50,7 +50,7 @@
                     <ul>
                         <?php foreach ($withdrawal_methods as $method) : ?>
                             <?php $tolowerwithdraw = strtolower($method); ?>
-                            <li><i class="icon-angle-double-right"></i><?php echo $method; ?><img src="<?php echo ALL_IN_CASINO_IMG . "payment-options/{$tolowerwithdraw}.png" ?>" alt="<?php echo $tolowerwithdraw; ?>"></li>
+                            <li>» </i><?php echo $method; ?><img src="<?php echo ALL_IN_CASINO_IMG . "payment-options/{$tolowerwithdraw}.png" ?>" alt="<?php echo $tolowerwithdraw; ?>"></li>
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
@@ -70,7 +70,7 @@
                     <ul>
                         <?php foreach ($providers as $provider) : ?>
                             <li>
-                                <i class="icon-angle-double-right"></i>
+                                »
                                 <?php echo $provider; ?>
                                 <?php $tolowerprovider = strtolower($provider); ?>
                                 <img src="<?php echo ALL_IN_CASINO_IMG . "providers/{$tolowerprovider}.png" ?>" alt="<?php echo $tolowerprovider; ?>">
