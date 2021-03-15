@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: All In Casino\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-15 13:08+0000\n"
+"POT-Creation-Date: 2021-03-15 18:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -249,10 +249,6 @@ msgctxt ""
 msgid "Casino slots list"
 msgstr ""
 
-#: includes/helper-functions.php:52
-msgid "Register"
-msgstr ""
-
 #: templates/casino-slots/casino-slots-shortcode.php:17
 #: templates/casino-slots/templates/content-slot.php:17
 msgid "RTP"
@@ -273,13 +269,13 @@ msgstr ""
 msgid "Review"
 msgstr ""
 
-#: templates/casino-reviews/parts/reviews-main-tab.php:28
-#: templates/casino-reviews/parts/sportsbook-main-tab.php:31
+#: templates/casino-reviews/parts/reviews-main-tab.php:29
+#: templates/casino-reviews/parts/sportsbook-main-tab.php:32
 msgid "Play"
 msgstr ""
 
-#: templates/casino-reviews/parts/reviews-main-tab.php:32
-#: templates/casino-reviews/parts/sportsbook-main-tab.php:35
+#: templates/casino-reviews/parts/reviews-main-tab.php:34
+#: templates/casino-reviews/parts/sportsbook-main-tab.php:37
 msgid "Review »"
 msgstr ""
 
@@ -323,8 +319,8 @@ msgstr ""
 msgid "Play Here!"
 msgstr ""
 
-#: templates/casino-reviews/templates/content-review.php:110
-#: templates/casino-reviews/templates/content-review.php:175
+#: templates/casino-reviews/templates/content-review.php:109
+#: templates/casino-reviews/templates/content-review.php:174
 #: templates/casino-reviews/widgets/casino-review-widget.php:17
 msgid "Get Bonus"
 msgstr ""

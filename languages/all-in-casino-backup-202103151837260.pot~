@@ -1,19 +1,19 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: All In Casino\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-15 13:08+0000\n"
-"PO-Revision-Date: 2021-03-15 13:09+0000\n"
-"Last-Translator: \n"
-"Language-Team: Latvian\n"
-"Language: lv\n"
-"Plural-Forms: nplurals=3; plural=n % 10 == 1 && n % 100 != 11 ? 0 : n != 0 ? "
-"1 : 2;\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.4.4; wp-5.5.3"
+"X-Loco-Version: 2.4.3; wp-5.5.1"
 
 #: includes/class-all-in-casino-post-types.php:66
 msgctxt "Post type general name"
@@ -261,22 +261,22 @@ msgstr ""
 #: templates/casino-slots/casino-slots-shortcode.php:21
 #: templates/casino-slots/templates/content-slot.php:22
 msgid "Bet per Spin"
-msgstr "Maksa par griezienu"
+msgstr ""
 
 #: templates/casino-slots/casino-slots-shortcode.php:25
 #: templates/casino-slots/templates/content-slot.php:27
 msgid "Paylines"
-msgstr "Maksas līnijas"
+msgstr ""
 
 #: templates/casino-slots/casino-slots-shortcode.php:30
 #: templates/casino-slots/widgets/casino-slot-widget.php:12
 msgid "Review"
-msgstr "Apskats"
+msgstr ""
 
 #: templates/casino-reviews/parts/reviews-main-tab.php:28
 #: templates/casino-reviews/parts/sportsbook-main-tab.php:31
 msgid "Play"
-msgstr "Spēlēt"
+msgstr ""
 
 #: templates/casino-reviews/parts/reviews-main-tab.php:32
 #: templates/casino-reviews/parts/sportsbook-main-tab.php:35
@@ -285,57 +285,57 @@ msgstr ""
 
 #: templates/casino-reviews/parts/single-review-aside.php:3
 msgid "Information"
-msgstr "Informācija"
+msgstr ""
 
 #: templates/casino-reviews/parts/single-review-aside.php:25
 msgid "Deposit Methods"
-msgstr "Iemaksas metodes"
+msgstr ""
 
 #: templates/casino-reviews/parts/single-review-aside.php:43
 msgid "Withdraw Methods"
-msgstr "Izmaksas metodes"
+msgstr ""
 
 #: templates/casino-reviews/parts/single-review-aside.php:63
 msgid "Providers"
-msgstr "Programmatūra"
+msgstr ""
 
 #: templates/casino-reviews/parts/single-review-aside.php:87
 msgid "Customer Support"
-msgstr "Klientu atbalsts"
+msgstr ""
 
 #: templates/casino-reviews/templates/content-review.php:16
 msgid "Updated: "
-msgstr "Atjaunināts: "
+msgstr ""
 
 #: templates/casino-reviews/templates/content-review.php:31
 msgid "Rating"
-msgstr "Vērtējums"
+msgstr ""
 
 #: templates/casino-reviews/templates/content-review.php:42
 msgid "Withdrawal time"
-msgstr "Izmaksas laiks"
+msgstr ""
 
 #: templates/casino-reviews/templates/content-review.php:46
 msgid "Welcome bonus"
-msgstr "Iepazīšanās bonuss"
+msgstr ""
 
 #: templates/casino-reviews/templates/content-review.php:57
 msgid "Play Here!"
-msgstr "Spēlēt šeit!"
+msgstr ""
 
 #: templates/casino-reviews/templates/content-review.php:110
 #: templates/casino-reviews/templates/content-review.php:175
 #: templates/casino-reviews/widgets/casino-review-widget.php:17
 msgid "Get Bonus"
-msgstr "Iegūt bonusu"
+msgstr ""
 
 #: templates/casino-slots/templates/content-slot.php:9
 msgid "Play for real money"
-msgstr "Spēlēt uz īstu naudu"
+msgstr ""
 
 #: templates/casino-slots/templates/content-slot.php:10
 msgid "Play for play money"
-msgstr "Spēlēt uz spēļu naudu"
+msgstr ""
 
 #. Name of the plugin
 msgid "All In Casino"
