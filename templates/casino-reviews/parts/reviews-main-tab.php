@@ -29,7 +29,7 @@
         </a>
         <a class="review" href="<?php echo get_permalink(); ?>" <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="url"';
                                                                 endif; ?>><span <?php if ($atts['itemlist'] == 'on') : echo 'itemprop="name"';
-                                                                    endif; ?>><?php _e('Review', 'all-in-casino'); ?></span></a>
+                                                                    endif; ?>><?php _e('Review »', 'all-in-casino'); ?></span></a>
     </div>
     <?php if (get_field('review_terms')) : ?>
         <div class="casino-review-terms">
