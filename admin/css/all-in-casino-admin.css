@@ -2,3 +2,47 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+/* ACF Box styles */
+#acf-group_5f05bddf850fc.postbox {
+    border          : none !important;
+    background-color: transparent;
+}
+
+#acf-group_5f05bddf850fc .postbox-header {
+    background-color: #007cba !important;
+    border          : none !important;
+}
+
+#acf-group_5f05bddf850fc .acf-accordion {
+    border: none !important;
+}
+
+#acf-group_5f05bddf850fc .description {
+    color: #fff;
+}
+
+#acf-group_5f05bddf850fc .acf-input .description {
+    color: #454545;
+}
+
+#acf-group_5f05bddf850fc .postbox-header h2,
+#acf-group_5f05bddf850fc .postbox-header button,
+#acf-group_5f05bddf850fc .postbox-header .toggle-indicator {
+    color: #fff;
+}
+
+.acf-field-5f1febd1d3aad .acf-accordion-title {
+    background-color: #454545 !important;
+    color           : #fff;
+}
+
+.acf-field-5f0712d3cd8dd .acf-accordion-title {
+    background-color: #454545 !important;
+    color           : #fff;
+}
+
+.acf-field-5f072579a8b20 .acf-accordion-title {
+    background-color: #454545 !important;
+    color           : #fff;
+}
