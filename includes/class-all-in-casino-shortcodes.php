@@ -83,7 +83,14 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
                 'post_type' => 'casino-slot',
                 'posts_per_page' => -1,
                 'paged' => $paged,
+                'id' => 'id',
             );
+            $id = $atts['id'];
+            $id = explode(',', $id);
+
+            if (!empty($atts['id'])) {
+                $loop_args['post__in'] = $id;
+            }
 
             $loop = new WP_Query($loop_args);
 
