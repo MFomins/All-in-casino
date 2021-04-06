@@ -71,7 +71,8 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
         {
             $atts = shortcode_atts(
                 array(
-                    'limit' => get_option('posts_per_page'),
+                    'limit' => '',
+                    'id' => '',
                 ),
                 $atts,
                 'casino_slots_list'
@@ -81,7 +82,7 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
 
             $loop_args = array(
                 'post_type' => 'casino-slot',
-                'posts_per_page' => -1,
+                'posts_per_page' => $atts['limit'],
                 'paged' => $paged,
                 'id' => 'id',
             );
@@ -90,6 +91,10 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
 
             if (!empty($atts['id'])) {
                 $loop_args['post__in'] = $id;
+            }
+
+            if (empty($atts['limit'])) {
+                $loop_args['posts_per_page'] = -1;
             }
 
             $loop = new WP_Query($loop_args);
