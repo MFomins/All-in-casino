@@ -144,7 +144,7 @@ class All_In_Casino_Post_Types
             'show_ui'            => true, //Have to finish. Will not be in menu
             'show_in_menu'       => true,
             'query_var'          => true,
-            'rewrite'            => array('slug' => 'slot'),
+            'rewrite'            => array('slug' => 'alle-spilleautomater'),
             'capability_type'    => 'post',
             'has_archive'        => false,
             'hierarchical'       => false,
