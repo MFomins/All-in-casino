@@ -5,6 +5,14 @@
     background-size: cover;
 }
 
+.casino-slots-head-bg .breadcrumbs nav{
+    padding: 10px 0;
+}
+
+.casino-slots-head-bg .breadcrumbs p{
+    margin: 0;
+}
+
 #aic-iframe {
     width: 850px;
     height: 500px;

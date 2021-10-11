@@ -1,5 +1,8 @@
 <div class="casino-slots-wrap">
     <div class="casino-slots-head-bg">
+        <div class="breadcrumbs aic-container">
+	        <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
+        </div>
         <div class="single-slot-name aic-container">
             <h1><?php echo get_the_title(); ?></h1>
         </div>
