@@ -71,17 +71,24 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
         {
             $atts = shortcode_atts(
                 array(
-                    'limit' => get_option('posts_per_page'),
+                    'limit' => '',
+                    'ppp' => -1,
                 ),
                 $atts,
                 'casino_slots_list'
             );
 
+            if (empty($atts['limit'])) {
+                $atts['limit'] = get_option('posts_per_page');
+            } else {
+                $atts['ppp'] = $atts['limit'];
+            }
+
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
             $loop_args = array(
                 'post_type' => 'casino-slot',
-                'posts_per_page' => -1,
+                'posts_per_page' => $atts['ppp'],
                 'paged' => $paged,
             );
 
@@ -102,23 +109,25 @@ if (!class_exists('All_In_Casino_Shortcodes')) :
                 wp_reset_postdata();
                 ?>
             </div>
-            <div class="pagination">
-                <?php
-                $total_pages = $loop->max_num_pages;
-                if ($total_pages > 1) {
-                    $current_page = max(1, get_query_var('paged'));
+            <?php if ($atts['ppp'] === '-1'): ?>
+                <div class="pagination">
+                    <?php
+                    $total_pages = $loop->max_num_pages;
+                    if ($total_pages > 1) {
+                        $current_page = max(1, get_query_var('paged'));
 
-                    echo paginate_links(array(
-                        'base' => get_pagenum_link(1) . '%_%',
-                        'format' => '/page/%#%',
-                        'current' => $current_page,
-                        'total' => $total_pages,
-                        'prev_text'    => false,
-                        'next_text'    => false,
-                    ));
-                }
-                ?>
-            </div>
+                        echo paginate_links(array(
+                            'base' => get_pagenum_link(1) . '%_%',
+                            'format' => '/page/%#%',
+                            'current' => $current_page,
+                            'total' => $total_pages,
+                            'prev_text'    => false,
+                            'next_text'    => false,
+                        ));
+                    }
+                    ?>
+                </div>
+            <?php endif; ?>
 
         <?php
             return ob_get_clean();
